@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="142" height="146" viewBox="0 0 142 146">
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g>
+                    <g fill="#867B69" fill-rule="nonzero">
+                        <g>
+                            <path d="M48 37.2l37.5 5.4L48 48l-5.4 37.5L37.2 48 0 42.6l37.2-5.4L42.6 0 48 37.2zM42.6 75V43.8l-3.9 3.9L42.6 75zm1.2-32.4H75l-27.3-3.9-3.9 3.9zm-1.2-.9V10.2l-3.9 27.6 3.9 3.9zm-32.4.9h31.5l-3.9-3.9-27.6 3.9z" transform="translate(-786 -157) rotate(15 -116.075 3126.738) translate(18.5 19) matrix(0 -1 -1 0 99.5 100)"/>
+                        </g>
+                    </g>
+                    <path stroke="#867B69" d="M.75 57.75h114" transform="translate(-786 -157) rotate(15 -116.075 3126.738) translate(18.5 19)"/>
+                    <path stroke="#867B69" d="M0 57.5h114" transform="translate(-786 -157) rotate(15 -116.075 3126.738) translate(18.5 19) rotate(-90 57 57.5)"/>
+                    <path stroke="#867B69" d="M21.75 91.5l70-68M91.75 91.5l-70-68" transform="translate(-786 -157) rotate(15 -116.075 3126.738) translate(18.5 19)"/>
+                    <path stroke="#867B69" stroke-dasharray="4 2" stroke-width="2" d="M57 88c17.95 0 32.5-14.55 32.5-32.5S74.95 23 57 23 24.5 37.55 24.5 55.5 39.05 88 57 88z" transform="translate(-786 -157) rotate(15 -116.075 3126.738) translate(18.5 19)"/>
+                    <path stroke="#867B69" stroke-dasharray="4 4" d="M57 82.5c15.188 0 27.5-12.088 27.5-27s-12.312-27-27.5-27-27.5 12.088-27.5 27 12.312 27 27.5 27z" transform="translate(-786 -157) rotate(15 -116.075 3126.738) translate(18.5 19)"/>
+                </g>
+                <text fill="#867B69" font-family="FuturaPT-Medium, Futura PT" font-size="14" font-weight="400" transform="translate(-786 -157) rotate(15 -116.075 3126.738)">
+                    <tspan x="70" y="11">N</tspan>
+                </text>
+                <text fill="#867B69" font-family="FuturaPT-Medium, Futura PT" font-size="14" font-weight="400" transform="translate(-786 -157) rotate(15 -116.075 3126.738)">
+                    <tspan x="139" y="80">E</tspan>
+                </text>
+                <text fill="#867B69" font-family="FuturaPT-Medium, Futura PT" font-size="14" font-weight="400" transform="translate(-786 -157) rotate(15 -116.075 3126.738)">
+                    <tspan x="0" y="80">W</tspan>
+                </text>
+                <text fill="#867B69" font-family="FuturaPT-Medium, Futura PT" font-size="14" font-weight="400" transform="translate(-786 -157) rotate(15 -116.075 3126.738)">
+                    <tspan x="72" y="150">S</tspan>
+                </text>
+                <text fill="#867B69" font-family="FuturaPT-Medium, Futura PT" font-size="8" font-weight="400" transform="translate(-786 -157) rotate(15 -116.075 3126.738) rotate(-45 115.5 116.5)">
+                    <tspan x="111" y="119">SE</tspan>
+                </text>
+                <text fill="#867B69" font-family="FuturaPT-Medium, Futura PT" font-size="8" font-weight="400" transform="translate(-786 -157) rotate(15 -116.075 3126.738) rotate(45 35 115)">
+                    <tspan x="29" y="117">SW</tspan>
+                </text>
+                <text fill="#867B69" font-family="FuturaPT-Medium, Futura PT" font-size="8" font-weight="400" transform="translate(-786 -157) rotate(15 -116.075 3126.738) rotate(-45 34 36.5)">
+                    <tspan x="27" y="39">NW</tspan>
+                </text>
+                <text fill="#867B69" font-family="FuturaPT-Medium, Futura PT" font-size="8" font-weight="400" transform="translate(-786 -157) rotate(15 -116.075 3126.738) rotate(45 115.5 39)">
+                    <tspan x="110" y="41">NE</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

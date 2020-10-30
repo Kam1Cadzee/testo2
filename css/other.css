@@ -1,0 +1,46 @@
+.iziModal {
+    z-index: 999; border-radius: 3px; max-width: 600px; display: block; height: 887px;
+    overflow-y: auto;
+}
+.iziModal .btn {
+    position: relative;
+    top: initial;
+    right: initial;
+}
+.floor-modal .btn {
+    position: absolute;
+}
+.iziModal {
+    text-align: left;
+    color: #38424b
+}
+.iziModal-overlay {
+    background-color: rgba(56, 66, 75, 0.8); z-index: 997;
+}
+.brochure-label {
+    cursor: pointer;
+    z-index: 90;
+}
+.form-label {
+    transition: top 200ms;
+}
+.form-label-top {
+    top: -1rem;
+}
+
+.error-input {
+    position: absolute;
+    font-size: 1.5rem;
+    margin-top: 0.4rem;
+}
+.wrapper-img {position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;}
+.wrapper-img img {
+    object-fit: fill;
+}
+.header {
+    z-index: 10;
+}
