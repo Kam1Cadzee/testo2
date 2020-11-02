@@ -1,13 +1,5 @@
 $(document).ready(function () {
 
-    //mobile-menu
-    $('.btn-mobile').on('click', function () {
-        $('.mobile-menu').addClass('open');
-    });
-    $('.mobile-menu .close').on('click', function () {
-        $('.mobile-menu').removeClass('open');
-    });
-
     function initAboutUsBlock() {
         if($(window).width() >= 992) {
             $('.about-us_link').on('click', function () {

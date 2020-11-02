@@ -19,7 +19,6 @@
 }
 .brochure-label {
     cursor: pointer;
-    z-index: 90;
 }
 .form-label {
     transition: top 200ms;
@@ -43,4 +42,10 @@
 }
 .header {
     z-index: 10;
+}
+.surfaces {
+    min-height: 100vh;
+}
+.mobile-menu {
+    display: block;
 }
