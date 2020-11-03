@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/testo2/static/css/main.5554f6a8.chunk.css",
-    "main.js": "/testo2/static/js/main.be5fd6ee.chunk.js",
-    "main.js.map": "/testo2/static/js/main.be5fd6ee.chunk.js.map",
-    "runtime-main.js": "/testo2/static/js/runtime-main.154140ea.js",
-    "runtime-main.js.map": "/testo2/static/js/runtime-main.154140ea.js.map",
-    "static/js/2.571a43ed.chunk.js": "/testo2/static/js/2.571a43ed.chunk.js",
-    "static/js/2.571a43ed.chunk.js.map": "/testo2/static/js/2.571a43ed.chunk.js.map",
-    "static/js/3.e088aa4f.chunk.js": "/testo2/static/js/3.e088aa4f.chunk.js",
-    "static/js/3.e088aa4f.chunk.js.map": "/testo2/static/js/3.e088aa4f.chunk.js.map",
+    "main.css": "/testo2/static/css/main.142a5328.chunk.css",
+    "main.js": "/testo2/static/js/main.7b713b08.chunk.js",
+    "main.js.map": "/testo2/static/js/main.7b713b08.chunk.js.map",
+    "runtime-main.js": "/testo2/static/js/runtime-main.2c8c2268.js",
+    "runtime-main.js.map": "/testo2/static/js/runtime-main.2c8c2268.js.map",
+    "static/js/2.487bedd7.chunk.js": "/testo2/static/js/2.487bedd7.chunk.js",
+    "static/js/2.487bedd7.chunk.js.map": "/testo2/static/js/2.487bedd7.chunk.js.map",
+    "static/js/3.e934cfec.chunk.js": "/testo2/static/js/3.e934cfec.chunk.js",
+    "static/js/3.e934cfec.chunk.js.map": "/testo2/static/js/3.e934cfec.chunk.js.map",
     "index.html": "/testo2/index.html",
-    "static/css/main.5554f6a8.chunk.css.map": "/testo2/static/css/main.5554f6a8.chunk.css.map",
-    "static/js/2.571a43ed.chunk.js.LICENSE.txt": "/testo2/static/js/2.571a43ed.chunk.js.LICENSE.txt",
+    "static/css/main.142a5328.chunk.css.map": "/testo2/static/css/main.142a5328.chunk.css.map",
+    "static/js/2.487bedd7.chunk.js.LICENSE.txt": "/testo2/static/js/2.487bedd7.chunk.js.LICENSE.txt",
     "static/media/advantage1.9a6542cd.jpg": "/testo2/static/media/advantage1.9a6542cd.jpg",
     "static/media/advantage2.44da71cd.jpg": "/testo2/static/media/advantage2.44da71cd.jpg",
     "static/media/advantage3.7578e607.jpg": "/testo2/static/media/advantage3.7578e607.jpg",
@@ -49,9 +49,9 @@
     "static/media/vue-corch.5e8a2e16.png": "/testo2/static/media/vue-corch.5e8a2e16.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.154140ea.js",
-    "static/js/2.571a43ed.chunk.js",
-    "static/css/main.5554f6a8.chunk.css",
-    "static/js/main.be5fd6ee.chunk.js"
+    "static/js/runtime-main.2c8c2268.js",
+    "static/js/2.487bedd7.chunk.js",
+    "static/css/main.142a5328.chunk.css",
+    "static/js/main.7b713b08.chunk.js"
   ]
 }
