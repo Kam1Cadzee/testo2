@@ -68,7 +68,6 @@ const Main = () => {
     <div>
       <div className="welcome">
         <Header/>
-
         <div className="welcome-center">
           <h1>
             <span className="h1-top">Surfaces mixtes à louer</span>
