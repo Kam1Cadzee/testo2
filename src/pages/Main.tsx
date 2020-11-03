@@ -1,4 +1,5 @@
 import React, {useEffect} from 'react';
+import {Link} from 'react-router-dom';
 import Header from '../components/Header';
 import slide1 from '../assets/img/slide1.jpg';
 import advantage1 from '../assets/img/advantage1.jpg';
@@ -20,7 +21,34 @@ import icPlane from '../assets/img/icons/ic-plane.svg';
 import View3D from '../components/View3D';
 import {Switch} from 'react-router';
 import Footer from '../components/Footer';
+import AboutItem from '../components/AboutItem';
 
+const data = [
+  {
+    id: 0,
+    img: gregoire,
+    email: 'marra@comptoir-immo.ch',
+    phone: '+41 22 319 88 17',
+    name: 'Grégoire Marra',
+    position: 'Courtier - Bureaux'
+  },
+  {
+    id: 1,
+    img: gaetan,
+    email: 'gbellec@comptoir-immo.ch',
+    phone: '+41 22 319 89 22',
+    name: 'Gaëtan Bellec',
+    position: 'Courtier Junior - Arcades'
+  },
+  {
+    id: 2,
+    img: chiste,
+    email: 'christe@comptoir-immo.ch',
+    phone: '+41 22 319 89 24',
+    name: 'Fabiola Christe',
+    position: 'Gérante - Arcades'
+  },
+]
 const Main = () => {
 
   useEffect(() => {
@@ -50,10 +78,12 @@ const Main = () => {
           <p>Accélérez votre développement en offrant un cadre unique à votre activité.</p>
         </div>
 
-        <figure className="pic-view3D">
-          <img src={slide1} />
+        <a href="#slider">
+          <figure className="pic-view3D">
+            <img src={slide1} />
             <span className="icon-3D dark">&nbsp;</span>
-        </figure>
+          </figure>
+        </a>
 
         <footer className="welcome-bottom">
           <div className="welcome-bottom_main">
@@ -83,7 +113,7 @@ const Main = () => {
                 Objet exclusif sur la Rive Gauche, cette réalisation d’un bureau d’architectes de renommée nationale,
                 Bassi Carella Marello, conjugue une conception contemporaine avec une construction de très haute qualité
                 répondant aux dernières normes techniques et environnementales.
-                <p><a href="#" className="btn">Voir les surfaces commerciales</a></p>
+                <p><Link to={'/surfaces'} className="btn">Voir les surfaces commerciales</Link></p>
               </div>
             </div>
           </article>
@@ -92,10 +122,8 @@ const Main = () => {
             <div className="advantage-content">
               <p className="subtitle">PARFAITEMENT INTÉGRÉ</p>
               <div className="text">
-                A moins de 5 km du centre-ville et fortement connecté aux réseaux de transports genevois (TPG, Léman
-                Express, Voie Verte), O2 est implanté au cœur d’un nouveau quartier composé de logements, commerces et
-                services de proximité au sein d’espaces publics variés et de qualité.
-                <p><a href="#" className="btn btn-light">Voir les surfaces commerciales</a></p>
+                A moins de 5 km du centre-ville et fortement connecté aux réseaux de transports genevois (TPG, Léman Express, Voie Verte), O<sub>2</sub> est implanté au cœur d’un nouveau quartier composé de logements, commerces et services de proximité au sein d’espaces publics variés et de qualité.
+                <p><Link to={'/surfaces'} className="btn btn-light">Voir les surfaces commerciales</Link></p>
               </div>
             </div>
           </article>
@@ -106,13 +134,15 @@ const Main = () => {
               <div className="text">
                 Un lieu idéal pour développer votre activité dans le domaine de la santé et du bien-être, des résidences
                 avec services, des espaces de coworking ou encore des professions attachées à la notion de durabilité.
-                <p><a href="#" className="btn btn-light">Voir les surfaces commerciales</a></p>
+                <p><Link to={'/surfaces'} className="btn btn-light">Voir les surfaces commerciales</Link></p>
               </div>
             </div>
           </article>
         </div>
       </div>
-      <View3D />
+      <div id="slider">
+        <View3D />
+      </div>
       <div className="about-us">
         <div className="about-us_container">
           <div className="about-us_top">
@@ -120,54 +150,11 @@ const Main = () => {
             <h2>L'équipe commerciale</h2>
           </div>
           <div className="owl-carousel owl-theme aboutus-slider">
-            <div className="about-us_one">
-              <figure className="pic">
-                <img src={gregoire} />
-                  <figcaption className="pic-info">
-                    <a href="javascript:void(0);" className="about-us_link">&nbsp;</a>
-                    <div className="about-us_info">
-                      <a href="mailto:marra@comptoir-immo.ch">marra@comptoir-immo.ch</a>
-                      <p className="medium-bold">+41 22 319 88 17</p>
-                    </div>
-                  </figcaption>
-              </figure>
-              <div className="about-us_name">
-                <p className="bold">Grégoire Marra</p>
-                Courtier - Bureaux
-              </div>
-            </div>
-            <div className="about-us_one">
-              <figure className="pic">
-                <img src={gaetan} />
-                  <figcaption className="pic-info">
-                    <a href="javascript:void(0);" className="about-us_link">&nbsp;</a>
-                    <div className="about-us_info">
-                      <a href="mailto:zoller@comptoir-immo.ch">gbellec@comptoir-immo.ch</a>
-                      <p className="medium-bold">+41 22 319 89 22</p>
-                    </div>
-                  </figcaption>
-              </figure>
-              <div className="about-us_name">
-                <p className="bold">Gaëtan Bellec</p>
-                Courtier Junior - Arcades
-              </div>
-            </div>
-            <div className="about-us_one">
-              <figure className="pic">
-                <img src={chiste} />
-                  <figcaption className="pic-info">
-                    <a href="javascript:void(0);" className="about-us_link">&nbsp;</a>
-                    <div className="about-us_info">
-                      <a href="mailto:zoller@comptoir-immo.ch">christe@comptoir-immo.ch</a>
-                      <p className="medium-bold">+41 22 319 89 24</p>
-                    </div>
-                  </figcaption>
-              </figure>
-              <div className="about-us_name">
-                <p className="bold">Fabiola Christe</p>
-                Gérante - Arcades
-              </div>
-            </div>
+            {
+              data.map(d => {
+                return <AboutItem {...d}/>
+              })
+            }
           </div>
         </div>
       </div>
@@ -191,8 +178,70 @@ const Main = () => {
                     <span className="map-caption_arrow arrow-brown"><img src={icArrowBrown} /></span>
                     <span>Principaux axes routiers</span>
                   </div>
+                  <div className="map-caption_cols">
+                    <div className="col-4">
+                      <p className="title">
+                        <img src={icBike}/>
+                          <span>15 min</span>
+                      </p>
+                      du centre de Genève à vélo
+                    </div>
+                    <div className="col-4">
+                      <p className="title">
+                        <img src={icTrain}/>
+                          <span>15 min</span>
+                      </p>
+                      de la Gare Cornavin en train
+                    </div>
+                    <div className="col-4">
+                      <p className="title">
+                        <img src={icBus}/>
+                          <span>17 min</span>
+                      </p>
+                      du centre-ville en bus
+                    </div>
+                    <div className="col-4">
+                      <p className="title">
+                        <img src={icPlane}/>
+                          <span>30 min</span>
+                      </p>
+                      de l'aéroport de Genève Cointrin en train
+                    </div>
+                  </div>
+                  <a target={'_blank'} href="https://www.google.com/maps/place/Communaux+d'Ambilly/@46.2048479,6.2131923,1551m/data=!3m1!1e3!4m5!3m4!1s0x478c6fc350bef5cd:0xc5bbd41489f1fe83!8m2!3d46.2040688!4d6.2131342" className="btn btn-black map-link">Voir sur Google Maps</a>
                 </figcaption>
             </figure>
+          </div>
+          <p className="map-link-row"><a target={'_blank'} href="https://www.google.com/maps/place/Communaux+d'Ambilly/@46.2048479,6.2131923,1551m/data=!3m1!1e3!4m5!3m4!1s0x478c6fc350bef5cd:0xc5bbd41489f1fe83!8m2!3d46.2040688!4d6.2131342" className="btn btn-black map-link">Voir sur Google Maps</a></p>
+          <div className="map-caption_cols map-caption_cols-duplicate">
+            <div className="col-4">
+              <p className="title">
+                <img src={icBike}/>
+                  <span>15 min</span>
+              </p>
+              du centre de Genève à vélo
+            </div>
+            <div className="col-4">
+              <p className="title">
+                <img src={icTrain}/>
+                  <span>15 min</span>
+              </p>
+              de la Gare Cornavin en train
+            </div>
+            <div className="col-4">
+              <p className="title">
+                <img src={icBus}/>
+                  <span>17 min</span>
+              </p>
+              du centre-ville en bus
+            </div>
+            <div className="col-4">
+              <p className="title">
+                <img src={icPlane}/>
+                  <span>30 min</span>
+              </p>
+              de l'aéroport de Genève Cointrin en train
+            </div>
           </div>
           <article className="map-content">
             <div className="map-content_col">

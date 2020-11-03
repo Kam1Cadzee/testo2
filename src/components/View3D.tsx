@@ -18,7 +18,13 @@ const View3D = () => {
           </div>
         </div>
         <div className="owl-carousel owl-theme slider-3D" id="sync1">
-          <iframe src="http://www.archigraphie.ch/content/portfolio/VR-MAIL/LCDA/TEST_CAFETERIA/index.html" width="100%" height={document.documentElement.clientHeight * 0.8}>
+          <iframe src="http://www.archigraphie.ch/content/portfolio/VR-MAIL/LCDA/CO_WORKING_FINAL/index.html" width="100%" height={document.documentElement.clientHeight}>
+            Ваш браузер не поддерживает плавающие фреймы!
+          </iframe>
+          <iframe src="http://www.archigraphie.ch/content/portfolio/VR-MAIL/LCDA/MEDICAL_FINAL_03/index.html" width="100%" height={document.documentElement.clientHeight}>
+            Ваш браузер не поддерживает плавающие фреймы!
+          </iframe>
+          <iframe src="http://www.archigraphie.ch/content/portfolio/VR-MAIL/LCDA/TEST_CAFETERIA/index.html" width="100%" height={document.documentElement.clientHeight}>
             Ваш браузер не поддерживает плавающие фреймы!
           </iframe>
         </div>

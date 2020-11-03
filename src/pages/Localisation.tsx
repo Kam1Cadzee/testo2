@@ -18,7 +18,6 @@ import Footer from '../components/Footer';
 
 const Localisation = () => {
 
-
   useEffect(() => {
     const staticPath = process.env.PUBLIC_URL + '/js/';
 
@@ -33,12 +32,12 @@ const Localisation = () => {
   }, []);
   return (
     <div>
-      <Header/>
+      <Header isGreen/>
       <main className="main">
         <div className="container">
-          <h1>O2, donnez une bouffée d’oxygène à votre environnement professionnel</h1>
-          <p className="main-subtitle">Vos futurs bureaux vous attendent à O2, au cœur d’un quartier innovant qui jouit
-            du dynamisme de la ville et du calme de la nature toute proche.</p>
+          <h1>O<sub>2</sub>, donnez une bouffée d’oxygène à votre environnement professionnel</h1>
+          <p className="main-subtitle">Vos futurs bureaux vous attendent à O<sub>2</sub>, au cœur d’un quartier innovant
+            qui jouit du dynamisme de la ville et du calme de la nature toute proche.</p>
           <div className="map-scroll">
             <figure className="map-figure">
               <img src={map} className="map-pic" />
@@ -86,10 +85,11 @@ const Localisation = () => {
                       de l'aéroport de Genève Cointrin en train
                     </div>
                   </div>
+                  <a href="https://www.google.com/maps/place/Communaux+d'Ambilly/@46.2048479,6.2131923,1551m/data=!3m1!1e3!4m5!3m4!1s0x478c6fc350bef5cd:0xc5bbd41489f1fe83!8m2!3d46.2040688!4d6.2131342" className="btn btn-black map-link">Voir sur Google Maps</a>
                 </figcaption>
             </figure>
           </div>
-          <p className="map-link-row"><a href="#" className="btn btn-black map-link">Voir sur Google Maps</a></p>
+          <p className="map-link-row"><a href="https://www.google.com/maps/place/Communaux+d'Ambilly/@46.2048479,6.2131923,1551m/data=!3m1!1e3!4m5!3m4!1s0x478c6fc350bef5cd:0xc5bbd41489f1fe83!8m2!3d46.2040688!4d6.2131342" className="btn btn-black map-link">Voir sur Google Maps</a></p>
           <div className="map-caption_cols map-caption_cols-duplicate">
             <div className="col-4">
               <p className="title">
@@ -150,11 +150,18 @@ const Localisation = () => {
           </div>
           <div className="route-one">
             <div className="route-one_icon">
+              <img src={icBike} className="icon-bike" />
+            </div>
+            <div className="route-one_text">
+              La voie verte fait la part belle aux mobilités douces.
+            </div>
+          </div>
+          <div className="route-one">
+            <div className="route-one_icon">
               <img src={icPlane} className="icon-plane" />
             </div>
             <div className="route-one_text">
-              La voie verte fait la part belle aux mobilités douces et l’aéroport tout proche permet d’organiser vos
-              voyages internationaux en toute simplicité.
+              L’aéroport tout proche permet d’organiser vos voyages internationaux en toute simplicité.
             </div>
           </div>
           <div className="route-one">

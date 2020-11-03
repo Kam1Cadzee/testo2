@@ -71,7 +71,7 @@ const ContactModal = ({onClose, show}:IContactModalProps) => {
   return (
 
     <>
-      <div className="iziModal-overlay"></div>
+      <div className="iziModal-overlay"  onClick={handleClose}></div>
       <div className="iziModal isAttached">
         <div className="iziModal-wrap">
           <div className="iziModal-content">

@@ -67,7 +67,7 @@ const DownloadModal = ({onClose, show}:IDownloadModalProps) => {
   const error = errors && errors['checkbox2'] ? errors['checkbox2'].message : '';
   return (
    <>
-     <div className="iziModal-overlay"></div>
+     <div className="iziModal-overlay"  onClick={handleClose}></div>
      <div id="downloadBrochure" className="iziModal isAttached">
        <div className="iziModal-wrap">
          <div className="iziModal-content">

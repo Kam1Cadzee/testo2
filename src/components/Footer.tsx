@@ -18,7 +18,7 @@ const Footer = () => {
               </li>
               <li>
                 <a href="https://comptoir-immo.ch" target="_blank">comptoir-immo.ch</a><br/>
-                <a href="https://belleterre.ch" target="_blank">belleterre.ch</a>
+                <a href="https://o2-belleterre.ch/" target="_blank">o2-belleterre.ch</a>
               </li>
             </ul>
           </div>
@@ -31,7 +31,7 @@ const Footer = () => {
 
         <div className="footer-bottom">
           <p>Ce site internet et son contenu sont non contractuels. Seul l'acte notarié fait foi.</p>
-          <p>o2.ch développé par <a href="https://wild-dots.com">Wild Dots</a></p>
+          <p>o2-belleterre.ch développé par <a href="https://wild-dots.com">Wild Dots</a></p>
         </div>
       </div>
     </footer>

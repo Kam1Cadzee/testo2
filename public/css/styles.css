@@ -42,7 +42,8 @@ h1, h2, h3, h4, h5, h6{font-weight:normal;margin:0}
 h1{color:#00574a;font-family:'FuturaPT Medium', Arial, Helvetica, sans-serif;font-size:6rem;margin-bottom:4rem;text-transform:uppercase}
 h2{font-family:'FuturaPT Bold', Arial, Helvetica, sans-serif;font-size:6rem;margin-bottom:6rem;text-transform:uppercase;text-align:center}
 h3{color:#8ec051;font-family:'FuturaPT Medium', Arial, Helvetica, sans-serif;font-size:3rem;margin-bottom:2.5rem;text-transform:uppercase}
-sub{font-size:100%}
+sub{font-size:70%;bottom:-.3rem}
+h1 sub{bottom:-.8rem}
 
 .container{padding:0 4.8rem}
 .container-fixed{width:100%;max-width:122rem;margin:0 auto}
@@ -56,17 +57,18 @@ a.btn{line-height:6rem}
 .btn-light{background-color:#8ec051}
 .btn-black{background-color:#2e353b;color:#fff}
 
-.brochure-label{position:fixed;top:50%;right:-12.1rem;transform:translateY(-50%) rotate(-90deg);background-color:#8ec051;color:#00574a;display:block;font-size:2rem;width:29rem;height:4.8rem;line-height:4.8rem;padding-left:6rem;text-align:center;z-index:10}
+.brochure-label{position:fixed;top:50%;right:-12.1rem;transform:translateY(-50%) rotate(-90deg);background-color:#8ec051;color:#00574a;display:block;font-size:2rem;width:29rem;height:4.8rem;line-height:4.8rem;padding-left:6rem;text-align:center;z-index:22}
 .brochure-label:before{background-color:#00574a;content:'';display:block;width:6rem;height:4.8rem;position:absolute;top:0;left:0}
 .brochure-label:after{background:url(../img/icons/ic-pdf-file.svg) 0 0 no-repeat;content:'';display:block;width:2rem;height:2.8rem;position:absolute;top:1rem;left:1.9rem;transform:rotate(90deg)}
 .brochure-label.active{background-color:#00574a;color:#fff}
 .welcome{background:url(../img/bg-main.jpg) 50% 0 no-repeat;background-size:cover;color:#fff;display:flex;flex-direction:column;justify-content:center;font-size:3rem;min-height:100vh;padding:15rem 4.8rem;text-align:center;position:relative}
-.header{display:flex;justify-content:center;align-items:flex-start;margin-bottom:8rem;padding:4rem 27.8rem 0;height:19.9rem;position:relative}
+.header{background-color:#fff;display:flex;justify-content:center;align-items:flex-start;margin-bottom:8rem;padding:4rem 27.8rem 0;height:19.9rem;position:relative;transition:all .3s linear}
 .header:after{background-color:#d7d9db;content:'';display:block;width:calc(100% - 9.6rem);height:.1rem;position:absolute;bottom:0;left:4.8rem}
 .header-logo{position:absolute;top:4rem;left:4.8rem}
-.welcome .header{position:absolute;top:0;left:0;width:100%;height:auto;border-bottom:none;margin-bottom:0}
+.welcome .header{background-color:transparent;position:absolute;top:0;left:0;width:100%;height:auto;z-index:20;border-bottom:none;margin-bottom:0}
 .welcome .header:after{display:none}
 .header-logo img{width:8rem;height:auto}
+.welcome .header-logo .logo-gr{display:none}
 .header-map{background:url(../img/icons/ic-map.svg) 50% 0 no-repeat;background-size:20px 26px;display:block;padding-top:3.8rem;position:absolute;top:41px;left:50%;transform:translateX(-50%)}
 .header-menu ul{display:flex;font-size:2.4rem}
 .header-menu li{margin:0 2.5rem;position:relative}
@@ -106,6 +108,13 @@ a.btn{line-height:6rem}
 .surfaces-paging_up{background:url(../img/icons/ic-arrow.svg) 50% 50% no-repeat;background-size:2rem 1.1rem;width:9rem;height:4.5rem;transform:rotate(180deg);display:block}
 .surfaces-paging_down{background:url(../img/icons/ic-arrow.svg) 50% 50% no-repeat;background-size:2rem 1.1rem;width:9rem;height:4.5rem;position:relative;display:block}
 .surfaces-paging_down:before{background-color:rgba(255,255,255,.5);content:'';display:block;width:5rem;height:.1rem;opacity:.5;position:absolute;top:0;left:50%;transform:translateX(-50%)}
+
+.header.scroll{background-color:#fff;height:14rem;margin-bottom:0;padding-top:2rem;position:fixed;top:0;left:0;width:100%;z-index:20}
+.header.scroll:after{display:none}
+.header.scroll .header-logo{top:2rem}
+.welcome .header.scroll .header-logo .logo-w{display:none}
+.welcome .header.scroll .header-logo .logo-gr{display:block}
+.welcome .header.scroll .header-menu a{color:#38424b}
 
 .advantage{padding:7rem 0 10rem}
 .advantage .container{background:url(../img/bg.gif) 50% 0 repeat-y;position:relative}
@@ -179,6 +188,8 @@ a.btn{line-height:6rem}
 .map-content_title img{height:2.4rem}
 .icon-swipe{background:#2e353b url(../img/icons/ic-swipe.svg) 50% 50% no-repeat;background-size:2.4rem 2.6rem;display:block;width:4rem;height:4rem;}
 .map-figure .icon-swipe{position:absolute;bottom:13.5rem;left:50%;transform:translateX(-50%);display:none}
+.map-figure .map-link{display:block;font-size:1.8rem;width:21rem;height:3rem;line-height:3rem;padding:0 4rem 0 1.2rem;position:absolute;right:0;top:-4rem;text-transform:none}
+.map-figure .map-link:after{background:url(../img/icons/ic-arrow-link.svg) 0 0 no-repeat;content:'';display:block;width:2rem;height:1.2rem;position:absolute;top:50%;right:1rem;transform:translateY(-50%)}
 .map-link-row{display:none}
 
 .footer-content{border-top:.2rem solid #2e353b;display:flex;justify-content:space-between;font-size:2.4rem;padding:2.2rem 0 2.1rem}
@@ -262,7 +273,8 @@ a.btn{line-height:6rem}
 
 .map-caption_cols{width:100%;display:flex;margin-top:2.2rem;padding:3rem 0 1rem;position:relative}
 .map-caption_cols:before{background-color:#d7d9db;content:'';display:block;width:calc(100% + 9.4rem);height:.1rem;position:absolute;top:0;left:-4.7rem}
-.col-4{flex:0 0 25%;width:25%;padding-right:1rem}
+.col-4{flex:0 0 25%;width:25%;padding-left:2rem}
+.map-caption_cols .col-4:first-child{padding-left:0}
 .map-caption_cols .title{display:flex;font-family:'FuturaPT Bold', Arial, Helvetica, sans-serif;font-size:2.4rem;margin-bottom:1.5rem}
 .map-caption_cols .title img{margin-right:2rem}
 .map-caption_cols-duplicate{display:none}
@@ -273,6 +285,7 @@ a.btn{line-height:6rem}
 .icon-car{width:3.2rem;height:2.4rem}
 .icon-plane{width:2.8rem;height:2.8rem}
 .icon-shop{width:3.2rem;height:2.8rem}
+.icon-bike{width:4rem;height:2.4rem}
 .route-one_text{flex:0 0 38%;width:38%;line-height:1.33;padding:4rem 0 8rem;position:relative}
 .route-one_text:before{background-color:#8ec051;content:'';display:block;width:100%;height:.1rem;position:absolute;top:-.1rem;left:0}
 
@@ -324,7 +337,6 @@ a.btn{line-height:6rem}
     .header:after{left:2.5rem;width:calc(100% - 5rem)}
     .header-logo, .pic-view3D{left:2.5rem}
     .header .btn{right:2.5rem}
-
 }
 
 @media screen and (max-width: 1399px) {
@@ -368,6 +380,8 @@ a.btn{line-height:6rem}
     .contact-form_col{padding-left:4rem}
     .contact-form_col:first-child{padding:0 4rem 0 0}
     .main-h2{font-size:5rem}
+    .route-one_icon{flex:0 0 45%;width:45%}
+    .route-one_text{flex:0 0 45%;width:45%}
 }
 
 @media screen and (max-width: 1140px) {
@@ -394,18 +408,16 @@ a.btn{line-height:6rem}
 }
 
 @media screen and (max-width: 991px) {
-    .brochure-label{width:4rem;height:4rem;padding-left:4rem;overflow:hidden;position:absolute;top:4.3rem;right:8.5rem}
+    .brochure-label{width:4rem;height:4rem;padding-left:4rem;overflow:hidden;top:4.3rem;right:8.5rem}
     .brochure-label:before{width:4rem;height:4rem}
     .brochure-label:after{top:.6rem;left:.9rem}
-    .welcome{background:url(../img/bg-main.jpg) 50% 0 no-repeat;background-size:cover;color:#fff;display:block;font-size:3rem;min-height:0;padding:1.3rem 1.5rem 0;text-align:center}
+    .welcome{background:url(../img/bg-main.jpg) 50% 0 no-repeat;background-size:cover;color:#fff;display:block;font-size:3rem;min-height:0;padding:18.3rem 1.5rem 0;text-align:center}
     .surfaces{background-image:url(../img/bg-surface.jpg);min-height:100vh}
-    .welcome .btn-mobile{top:1rem;right:1rem}
     .welcome-bottom{display:block;height:auto}
     .header{height:12rem;margin-bottom:4rem;padding:0;z-index:18}
-    .welcome .header{height:17rem;padding:0 0 4.5rem;position:relative}
-    .welcome .header-logo{top:1rem;left:1rem}
     .header-logo img{width:6rem}
     .header-map{display:none}
+    .header.scroll{height:11.4rem}
     .contact{padding:8rem 1.5rem 4rem}
     .contact-form{display:block;width:100%;max-width:47rem;margin:0 auto}
     .contact-form_col{border-left:none;width:100%;padding:0}
@@ -425,7 +437,7 @@ a.btn{line-height:6rem}
     .about-us_one{margin:0 auto;width:100%;max-width:40.7rem}
     .map{padding-bottom:2rem}
     .map-figure{height:46.7rem;}
-    .map-pic{width:auto;height:100%}
+    .map-pic{width:100%;height:100%;object-fit:cover}
     .map-caption{padding:1.3rem 2.5rem 1.4rem;left:2.5rem;bottom:2.5rem;width:calc(100% - 5rem)}
     .map-content{flex-flow:row wrap;margin:0 -2rem}
     .map-content_col{width:33.333333%;margin-bottom:5rem}
@@ -479,10 +491,9 @@ a.btn{line-height:6rem}
     .footer-left{margin-bottom:2rem;text-align:center}
     .logo-batima{margin:0 auto}
     .footer-right, .about-us_address{border-left:none;border-top:.1rem solid #d7d9db;line-height: 1.78;padding-top:2rem;width:100%}
-    .route-one_icon{flex:0 0 23%;width:23%}
-    .route-one_text{flex:0 0 60%;width:60%}
     .map-caption_cols-duplicate{flex-flow:row wrap;padding:0 0 2rem}
     .col-4{flex:0 0 50%;width:50%;margin-bottom:4.5rem}
+    .col-4:nth-child(2n){padding:0 0 0 2rem}
     .btn-plans{width:32rem}
     .floor-modal .modal-body{position:relative}
     .floor-count{position:relative;top:auto;right:0;background-color:#2e353b;color:#fff;margin:3rem -3rem 0;padding:0 3rem 9rem;transform:none}
@@ -501,13 +512,14 @@ a.btn{line-height:6rem}
     .brochure-label{top:3.5rem;right:7.5rem}
     .mobile-menu{padding:8.5rem 1.5rem}
     .container, .about-us, .welcome-bottom{padding:0 1.5rem}
-    .welcome{padding-top:1.5rem}
+    /*.welcome{padding-top:1.5rem}*/
     .header{padding-bottom:2.5rem;justify-content:center}
     .header:after{left:1.5rem;width:calc(100% - 3rem)}
-    .header-logo{left:1.5rem;top:1.5rem}
-    .welcome .header-logo{left:0;top:0}
+    .header.scroll{height:10.4rem}
+    .header-logo, .header.scroll .header-logo{left:1.5rem;top:1.5rem}
+    /*.welcome .header-logo{left:0;top:0}*/
     .btn-mobile{top:1.5rem;right:1.5rem}
-    .welcome .btn-mobile{top:0;right:0}
+    /*.welcome .btn-mobile{top:0;right:0}*/
     .advantage-one .subtitle{font-size:4rem}
     .slider-3D-title{top:.5rem;left:6.6rem;border-left:none;font-size:1.4rem;padding-left:0;width:15rem}
     .slider-3D{padding-top:5rem}
@@ -525,6 +537,7 @@ a.btn{line-height:6rem}
     .main-h2{font-size:3rem;margin-bottom:3rem;text-transform:uppercase}
     .dark-block{margin:0 -1.5rem;padding:2rem 1.5rem 5rem}
     .map-caption_cols-duplicate{margin-top:-.5rem}
+    .map-figure .map-link{display:none}
     .map-link-row{display:block;background-color:#E0E1E2;margin:-4rem -1.5rem 3.4rem;padding:0 1.5rem 1.5rem;text-align:center}
     .map-link{display:inline-block;width:auto;padding:0 6rem;position:relative}
     .map-link:after{background:url(../img/icons/ic-arrow-link.svg) 0 0 no-repeat;content:'';display:block;width:2rem;height:1.2rem;position:absolute;top:50%;right:2rem;transform:translateY(-50%)}
@@ -532,7 +545,7 @@ a.btn{line-height:6rem}
     .surfaces .pic-view3D .icon-3D.dark{right:0;bottom:0;width:100%;height:100%}
     .surfaces .pic-view3D:before, .surfaces .pic-view3D img{display:none}
     .surfaces{min-height:calc(100vh - 13.3rem);margin-bottom:13.3rem}
-    .surfaces-bottom{bottom:-13.3rem;padding:0;flex-direction:column;background-color:#00574a;height:16.3rem;padding:0 1.5rem}
+    .surfaces-bottom{bottom:-13.3rem;flex-direction:column;background-color:#00574a;height:16.3rem;padding:0 1.5rem}
     .surfaces-paging{background-color:transparent;width:100%;position:absolute;left:0}
     .surfaces-paging_down, .surfaces-paging_up{width:2rem;height:6.4rem;position:absolute;top:2rem;border-top:.1rem solid rgba(255,255,255,.25);border-bottom:.1rem solid rgba(255,255,255,.25)}
     .surfaces-paging_down{left:1.5rem}
@@ -598,6 +611,8 @@ a.btn{line-height:6rem}
 }
 
 @media screen and (max-width: 480px) {
+    .header{height:9rem;}
+    .header.scroll{height:7.8rem}
     .header-logo img{width:4rem}
     .welcome{margin-bottom:22.5rem;padding-bottom:.1rem}
     .welcome-bottom{width:100%;position:absolute;left:0;bottom:-22.5rem;margin:0;padding:0}
@@ -613,6 +628,7 @@ a.btn{line-height:6rem}
     .icon-car{width:2.4rem;height:1.8rem}
     .icon-plane{width:2.4rem;height:2.1rem}
     .icon-shop{width:2.4rem;height:2.1rem}
+    .icon-bike{width:2.4rem;height:1.4rem}
     .floor-slider, .floor-slider .owl-nav{width:28.3rem}
     .floor-slider .plan-floor img, .floor-slider .vue img{width:20rem !important}
     .floor-slider .owl-nav button.owl-next, .floor-slider .owl-nav button.owl-prev{width:3.2rem}

@@ -1,6 +1,5 @@
 import React, {useEffect} from 'react';
-import planFloor from '../assets/img/floors/plan-floor-0.png';
-import vueCorch from '../assets/img/floors/vue-corch.png';
+import {data} from '../pages/Surfaces';
 
 interface IFloorModalProps {
   show: boolean;
@@ -10,7 +9,6 @@ interface IFloorModalProps {
   openContact: any;
 }
 
-const data = [1,2,3,4,5,6];
 
 const FloorModal = ({index, onClose, show, setIndex, openContact}: IFloorModalProps) => {
   const handleClose = () => {
@@ -32,7 +30,7 @@ const FloorModal = ({index, onClose, show, setIndex, openContact}: IFloorModalPr
 
   if(!show) return null;
 
-  const next = index === data.length - 1 ? 1 : index + 1;
+  const next = index === data.length - 1 ? 0 : index + 1;
   const prev = index === 0 ? data.length - 1: index - 1;
 
   const increase = () => {
@@ -49,7 +47,11 @@ const FloorModal = ({index, onClose, show, setIndex, openContact}: IFloorModalPr
     openContact();
   };
 
+  const detail = data.find(d => d.id === index)!;
+
   return (
+<>
+    <div className="iziModal-overlay" onClick={handleClose}></div>
     <div className="iziModal isAttached floor-modal">
       <div className="iziModal-wrap">
         <div className="iziModal-content">
@@ -57,14 +59,14 @@ const FloorModal = ({index, onClose, show, setIndex, openContact}: IFloorModalPr
         <div className="modal-content">
           <button className="modal-close" onClick={handleClose}>&nbsp;</button>
 
-          <h3>Rez-de-chaussée</h3>
+          <h3>{detail.title}</h3>
           <ul className="floor-modal_info">
-            <li>Surface <span className="bold">950.45</span> m<sup>2</sup></li>
-            <li>Surface minimum <span className="bold">300</span> m<sup>2</sup></li>
+            <li>Surface <span className="bold">{detail.surface}</span> m<sup>2</sup></li>
+            <li>Surface minimum <span className="bold">{detail.min}</span> m<sup>2</sup></li>
           </ul>
           <div className="owl-carousel owl-theme floor-slider">
-            <figure className="plan-floor"><img src={planFloor}/></figure>
-            <figure className="vue"><img src={vueCorch}/></figure>
+            <figure className="plan-floor"><img src={detail.images[0]}/></figure>
+            <figure className="vue"><img src={detail.images[1]}/></figure>
           </div>
           <span className="icon-compass"></span>
           <a onClick={handleOpenContact} className="btn btn-contact" >Contact</a>
@@ -73,7 +75,7 @@ const FloorModal = ({index, onClose, show, setIndex, openContact}: IFloorModalPr
             <button type="button" className="floor-count_up" onClick={decrease}></button>
             <div className="floor-count_floor">
               <p>{index}</p>
-              Rez-de-chaussée
+              {detail.title}
             </div>
             <button type="button" className="floor-count_down" onClick={increase}></button>
             <span className="floor-number">{next}</span>
@@ -83,6 +85,7 @@ const FloorModal = ({index, onClose, show, setIndex, openContact}: IFloorModalPr
         </div>
       </div>
     </div>
+  </>
   )
 };
 

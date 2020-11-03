@@ -8,6 +8,7 @@ import ContactModal from './components/ContactModal';
 import About from './pages/About';
 import Localisation from './pages/Localisation';
 import Surfaces from './pages/Surfaces';
+import FullView3D from './pages/FullView3D';
 
 function App() {
   const [isDownloadShow, setIsDownloadShow] = useState(false);
@@ -24,6 +25,7 @@ function App() {
         <Route exact path={'/about'} component={About} />
         <Route exact path={'/localisation'} component={Localisation} />
         <Route exact path={'/surfaces'} component={Surfaces} />
+        <Route exact path={'/view3d'} component={FullView3D} />
       </Switch>
       <DownloadModal onClose={() => setIsDownloadShow(false)} show={isDownloadShow}/>
       <a onClick={handleOpenContact} className="brochure-label">Téléchargez la brochure</a>
