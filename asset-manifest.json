@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/testo2/static/css/main.5554f6a8.chunk.css",
-    "main.js": "/testo2/static/js/main.acbdb851.chunk.js",
-    "main.js.map": "/testo2/static/js/main.acbdb851.chunk.js.map",
+    "main.js": "/testo2/static/js/main.9c1126fb.chunk.js",
+    "main.js.map": "/testo2/static/js/main.9c1126fb.chunk.js.map",
     "runtime-main.js": "/testo2/static/js/runtime-main.154140ea.js",
     "runtime-main.js.map": "/testo2/static/js/runtime-main.154140ea.js.map",
     "static/js/2.571a43ed.chunk.js": "/testo2/static/js/2.571a43ed.chunk.js",
@@ -46,12 +46,12 @@
     "static/media/plan-floor-5.93c0431e.png": "/testo2/static/media/plan-floor-5.93c0431e.png",
     "static/media/plan-floor-6.9da9af5b.png": "/testo2/static/media/plan-floor-6.9da9af5b.png",
     "static/media/slide1.4bfad16f.jpg": "/testo2/static/media/slide1.4bfad16f.jpg",
-    "static/media/vue-corch.9d2f4aaa.png": "/testo2/static/media/vue-corch.9d2f4aaa.png"
+    "static/media/vue-corch.5e8a2e16.png": "/testo2/static/media/vue-corch.5e8a2e16.png"
   },
   "entrypoints": [
     "static/js/runtime-main.154140ea.js",
     "static/js/2.571a43ed.chunk.js",
     "static/css/main.5554f6a8.chunk.css",
-    "static/js/main.acbdb851.chunk.js"
+    "static/js/main.9c1126fb.chunk.js"
   ]
 }

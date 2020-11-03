@@ -285,6 +285,7 @@ a.btn{line-height:6rem}
 .icon-car{width:3.2rem;height:2.4rem}
 .icon-plane{width:2.8rem;height:2.8rem}
 .icon-shop{width:3.2rem;height:2.8rem}
+.icon-bike{width:4rem;height:2.4rem}
 .route-one_text{flex:0 0 38%;width:38%;line-height:1.33;padding:4rem 0 8rem;position:relative}
 .route-one_text:before{background-color:#8ec051;content:'';display:block;width:100%;height:.1rem;position:absolute;top:-.1rem;left:0}
 
@@ -627,6 +628,7 @@ a.btn{line-height:6rem}
     .icon-car{width:2.4rem;height:1.8rem}
     .icon-plane{width:2.4rem;height:2.1rem}
     .icon-shop{width:2.4rem;height:2.1rem}
+    .icon-bike{width:2.4rem;height:1.4rem}
     .floor-slider, .floor-slider .owl-nav{width:28.3rem}
     .floor-slider .plan-floor img, .floor-slider .vue img{width:20rem !important}
     .floor-slider .owl-nav button.owl-next, .floor-slider .owl-nav button.owl-prev{width:3.2rem}
