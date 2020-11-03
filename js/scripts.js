@@ -1,5 +1,16 @@
 $(document).ready(function () {
 
+    var pano2 = new pano2vrPlayer("container2");
+    var pano1 = new pano2vrPlayer("container1");
+    var pano3 = new pano2vrPlayer("container3");
+    // load the configuration
+
+    window.addEventListener("load", function () {
+        pano2.readConfigUrlAsync("pano2.xml");
+        pano1.readConfigUrlAsync("pano1.xml");
+        pano3.readConfigUrlAsync("pano3.xml");
+    });
+
     function initAboutUsBlock() {
         if($(window).width() >= 992) {
             $('.about-us_link').on('click', function () {
@@ -55,10 +66,11 @@ $(document).ready(function () {
     var syncedSecondary = true;
 
     sync1.owlCarousel({
-        loop:true,
+        loop:false,
         margin:0,
         items: 1,
         nav: true,
+        mouseDrag: false,
         responsive: {
             0:{
                 dots:false
