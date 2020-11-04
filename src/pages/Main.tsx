@@ -67,7 +67,7 @@ const Main = () => {
   return (
     <div>
       <div className="welcome">
-        <Header/>
+        <Header isScroll={false}/>
         <div className="welcome-center">
           <h1>
             <span className="h1-top">Surfaces mixtes à louer</span>

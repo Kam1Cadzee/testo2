@@ -26,14 +26,14 @@ const About = () => {
   return (
     <div>
       <Header isGreen/>
-      <main className="main">
+      <main className="main" style={{marginTop: '20rem'}}>
         <div className="container">
-          <p className="main-h2">Vos futurs bureaux se trouvent à moins de 5 kilomètres du centre-ville de Genève, à
+          <p className="main-h2">Vos futures surfaces se trouvent à moins de 5 kilomètres du centre-ville de Genève, à
             Belleterre, l’un des quartiers les plus innovants du Canton de Genève. Installez votre activité là où la
             ville se mêle à la nature.</p>
           <figure className="main-pic"><img src={advantage2} /></figure>
           <h1>O<sub>2</sub>, où vous attend votre futur professionnel</h1>
-          <p className="main-subtitle">Vos futurs bureaux O<sub>2</sub> ont été pensés par un bureau d’architecture à la
+          <p className="main-subtitle">Vos futures surfaces O<sub>2</sub> ont été pensés par un bureau d’architecture à la
             renommée internationale. <span className="medium-bold">Bassi Carella Marello</span> ont conjugué innovations
             techniques et environnementales pour construire un projet idéal, prêt à accueillir le futur de votre
             activité professionnelle.</p>
@@ -51,7 +51,7 @@ const About = () => {
                 <li>Pour assurer à vos clients et collaborateurs un confort optimal, le concept repose sur une
                   construction respectant les dernières normes et de très hautes performances énergétiques.
                 </li>
-                <li>Parce que c’est important de se sentir chez soi même sur son lieu de travail, les espaces permettent
+                <li>Parce que c’est important de se sentir chez soi sur son lieu de travail, les espaces permettent
                   une grande <span className="medium-bold">flexibilité et de multiples</span> possibilités
                   d’aménagement. Selon votre activité et vos besoins faites le choix d’un open-space, d’espaces
                   cloisonnés ou mixtes.
@@ -76,9 +76,9 @@ const About = () => {
           </article>
           <article className="dark-block">
             <div className="dark-block_content">
-              <h3>O<sub>2</sub>, des bureaux qui respirent l’innovation</h3>
+              <h3>O<sub>2</sub>, des surfaces qui respirent l’innovation</h3>
               <p className="main-subtitle">Pour vous accueillir dans un environnement professionnel qui respire, vos
-                futurs bureaux prennent place dans l’un des quartiers les plus innovants du <span
+                futurs surfaces prennent place dans l’un des quartiers les plus innovants du <span
                   className="medium-bold">Canton de Genève</span>. Le projet a été pensé pour s’inscrire dans l’ère du
                 temps, avec comme pivots le développement durable et la mixité.</p>
               <div className="main-cols">

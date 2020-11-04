@@ -32,8 +32,8 @@ const Localisation = () => {
   }, []);
   return (
     <div>
-      <Header isGreen/>
-      <main className="main">
+      <Header isGreen isScroll/>
+      <main className="main" style={{marginTop: '20rem'}}>
         <div className="container">
           <h1>O<sub>2</sub>, donnez une bouffée d’oxygène à votre environnement professionnel</h1>
           <p className="main-subtitle">Vos futurs bureaux vous attendent à O<sub>2</sub>, au cœur d’un quartier innovant
@@ -85,11 +85,11 @@ const Localisation = () => {
                       de l'aéroport de Genève Cointrin en train
                     </div>
                   </div>
-                  <a href="https://www.google.com/maps/place/Communaux+d'Ambilly/@46.2048479,6.2131923,1551m/data=!3m1!1e3!4m5!3m4!1s0x478c6fc350bef5cd:0xc5bbd41489f1fe83!8m2!3d46.2040688!4d6.2131342" className="btn btn-black map-link">Voir sur Google Maps</a>
+                  <a target={'_blank'} href="https://www.google.com/maps/place/Communaux+d'Ambilly/@46.2048479,6.2131923,1551m/data=!3m1!1e3!4m5!3m4!1s0x478c6fc350bef5cd:0xc5bbd41489f1fe83!8m2!3d46.2040688!4d6.2131342" className="btn btn-black map-link">Voir sur Google Maps</a>
                 </figcaption>
             </figure>
           </div>
-          <p className="map-link-row"><a href="https://www.google.com/maps/place/Communaux+d'Ambilly/@46.2048479,6.2131923,1551m/data=!3m1!1e3!4m5!3m4!1s0x478c6fc350bef5cd:0xc5bbd41489f1fe83!8m2!3d46.2040688!4d6.2131342" className="btn btn-black map-link">Voir sur Google Maps</a></p>
+          <p className="map-link-row"><a target={'_blank'} href="https://www.google.com/maps/place/Communaux+d'Ambilly/@46.2048479,6.2131923,1551m/data=!3m1!1e3!4m5!3m4!1s0x478c6fc350bef5cd:0xc5bbd41489f1fe83!8m2!3d46.2040688!4d6.2131342" className="btn btn-black map-link">Voir sur Google Maps</a></p>
           <div className="map-caption_cols map-caption_cols-duplicate">
             <div className="col-4">
               <p className="title">

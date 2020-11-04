@@ -15,7 +15,13 @@ import planFloor3 from '../assets/img/floors/plan-floor-3.png';
 import planFloor4 from '../assets/img/floors/plan-floor-4.png';
 import planFloor5 from '../assets/img/floors/plan-floor-5.png';
 import planFloor6 from '../assets/img/floors/plan-floor-6.png';
-import {Link} from 'react-router-dom';
+import planFloor11 from '../assets/img/floors/floor11.jpg';
+import planFloor12 from '../assets/img/floors/floor12.jpg';
+import planFloor13 from '../assets/img/floors/floor13.jpg';
+import planFloor14 from '../assets/img/floors/floor14.jpg';
+import planFloor15 from '../assets/img/floors/floor15.jpg';
+import planFloor16 from '../assets/img/floors/floor16.jpg';
+import {Link, useLocation} from 'react-router-dom';
 
 const fillColor = "rgba(0, 87, 74, 0.5)";
 const coords = [
@@ -33,54 +39,55 @@ const data = [
     title: 'Rez-de-chaussée',
     surface: 950.45,
     min: 300,
-    images: [planFloor, vueCorch]
+    images: [planFloor, vueCorch, planFloor11]
   },
   {
     id: 1,
     title: '1 er étage',
     surface: '1’151.40',
     min: 300,
-    images: [planFloor1, vueCorch]
+    images: [planFloor1, vueCorch, planFloor11]
   },
   {
     id: 2,
     title: '2 ème étage',
     surface: '1’151.40',
     min: 300,
-    images: [planFloor2, vueCorch]
+    images: [planFloor2, vueCorch, planFloor12]
   },
   {
     id: 3,
     title: '3 ème étage',
     surface: '1’151.40',
     min: 300,
-    images: [planFloor3, vueCorch]
+    images: [planFloor3, vueCorch, planFloor13]
   },
   {
     id: 4,
     title: '4 ème étage',
     surface: '1’156.70',
     min: 300,
-    images: [planFloor4, vueCorch]
+    images: [planFloor4, vueCorch, planFloor14]
   },
   {
     id: 5,
     title: '5 ème étage',
     surface: '1’156.70',
     min: 300,
-    images: [planFloor5, vueCorch]
+    images: [planFloor5, vueCorch, planFloor15]
   },
   {
     id: 6,
     title: '6 ème étage',
     surface: 546.55,
     min: 300,
-    images: [planFloor6, vueCorch]
+    images: [planFloor6, vueCorch, planFloor16]
   },
 ];
 const imgRatio = 2160 / 1353;
 
 const Surfaces = () => {
+  const location = useLocation();
   const { innerWidth, innerHeight, outerHeight, outerWidth } = useWindowSize();
   const [index, setIndex] = useState(0);
   const [show, setShow] = useState(false);
@@ -93,9 +100,10 @@ const Surfaces = () => {
     swipe.src = staticPath + 'scripts.js';
     swipe.id = 'swipe-js';
     document.body.appendChild(swipe);
-
+    document.body.style.overflow = 'hidden';
     return () => {
       swipe.remove();
+      document.body.style.overflow = 'scroll';
     };
   }, []);
 
@@ -141,7 +149,7 @@ const Surfaces = () => {
   const detail = data.find(d => d.id === index)!;
   return (
     <div className="welcome surfaces">
-      <Header />
+      <Header isScroll={false} />
 
       <div className={'wrapper-img'}>
         <ImageMapper active={true} src={URL} map={MAP} width={innerWidth} height={innerHeight! - ((index + 1) / 10)} onClick={(evt: any) => handleClick(+evt.name)}/>

@@ -52,3 +52,11 @@
 .route-one_text {
     text-align: left;
 }
+.surfaces .welcome-bottom, .surfaces-bottom {
+    position: fixed;
+}
+@media screen and (max-width: 639px) {
+    .surfaces-bottom {
+        bottom: 0;
+    }
+}

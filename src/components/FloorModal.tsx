@@ -67,6 +67,7 @@ const FloorModal = ({index, onClose, show, setIndex, openContact}: IFloorModalPr
           <div className="owl-carousel owl-theme floor-slider">
             <figure className="plan-floor"><img src={detail.images[0]}/></figure>
             <figure className="vue"><img src={detail.images[1]}/></figure>
+            <figure className="plan-floor"><img src={detail.images[2]}/></figure>
           </div>
           <span className="icon-compass"></span>
           <a onClick={handleOpenContact} className="btn btn-contact" >Contact</a>

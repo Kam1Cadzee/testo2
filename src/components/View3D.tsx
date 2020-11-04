@@ -1,6 +1,19 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 
 const View3D = () => {
+
+  useEffect(() => {
+    const staticPath = process.env.PUBLIC_URL + '/js/';
+
+    let swipe = document.createElement('script');
+    swipe.src = staticPath + 'view.js';
+    swipe.id = 'view-js';
+    document.body.appendChild(swipe);
+
+    return () => {
+      swipe.remove();
+    };
+  }, []);
 
   return (
     <div className="view3D">
@@ -21,12 +34,12 @@ const View3D = () => {
           <div id="container1" style={{width: '100vw', height: '100vh', overflow: 'hidden'}}>
             <br />Loading...<br /><br />
           </div>
-          <div id="container2" style={{width: '100vw', height: '100vh', overflow: 'hidden'}}>
+          {/*<div id="container2" style={{width: '100vw', height: '100vh', overflow: 'hidden'}}>
             <br />Loading...<br /><br />
           </div>
           <div id="container3" style={{width: '100vw', height: '100vh', overflow: 'hidden'}}>
             <br />Loading...<br /><br />
-          </div>
+          </div>*/}
         </div>
       </div>
     </div>

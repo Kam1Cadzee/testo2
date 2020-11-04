@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {BrowserRouter, Route, Switch} from 'react-router-dom'
+import {BrowserRouter, Route, Switch, useLocation} from 'react-router-dom'
 import './App.css';
 import Footer from './components/Footer';
 import Main from './pages/Main';
@@ -12,12 +12,20 @@ import FullView3D from './pages/FullView3D';
 
 function App() {
   const [isDownloadShow, setIsDownloadShow] = useState(false);
-
+  const location = useLocation();
   const handleOpenContact = (e: any) => {
     e.preventDefault();
     setIsDownloadShow(true);
   };
 
+  useEffect(() => {
+    if(!window) return;
+
+    window.scroll({
+      top: 0,
+      behavior: 'smooth'
+    })
+  }, [location.pathname]);
   return (
     <div className="App">
       <Switch>

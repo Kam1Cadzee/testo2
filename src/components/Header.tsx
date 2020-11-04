@@ -6,11 +6,14 @@ import Footer from './Footer';
 import ContactModal from './ContactModal';
 import useMedia from 'use-media';
 import DownloadModal from './DownloadModal';
+import {useScrollYPosition} from 'react-use-scroll-position';
 
 interface IHeaderProps {
   isGreen?: boolean;
+  isScroll?: boolean;
 }
-const Header = ({isGreen = false}:IHeaderProps) => {
+const Header = ({isGreen = false, isScroll = true}:IHeaderProps) => {
+  const scrollY = useScrollYPosition();
   const [isContactShow, setIsContactShow] = useState(false);
   const [isDownloadShow, setIsDownloadShow] = useState(false);
 
@@ -48,7 +51,7 @@ const Header = ({isGreen = false}:IHeaderProps) => {
           </div>
         )
       }
-    <header className="header">
+    <header className={`header ${scrollY > 50 || isScroll ? 'scroll' : ''}`}>
       <Link to="/" className="header-logo"><img src={isGreen ? logoGR : logo} alt="O2 Belle Terre (logo)" /></Link>
       {
         (!is1140) && (
