@@ -55,6 +55,17 @@
 .surfaces .welcome-bottom, .surfaces-bottom {
     position: fixed;
 }
+.floor-modal_info {
+    font-size: 2.6rem;
+}
+.extraText {
+    position: absolute;
+    right: 4rem;
+    bottom: 5rem;
+    width: 29rem;
+    font-size: 2rem;
+    text-align: right;
+}
 @media screen and (max-width: 639px) {
     .surfaces-bottom {
         bottom: 0;
