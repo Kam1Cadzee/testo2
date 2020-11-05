@@ -15,7 +15,7 @@ const AboutItem = ({email, img, name, phone, position}: IAboutItemProps) => {
       <figure className="pic">
         <img src={img} />
         <figcaption className="pic-info">
-          <a className={`about-us_link ${hover ? 'rotate' : ''}`}>&nbsp;</a>
+          <a className={`about-us_link ${hover ? 'rotate' : ''}`} onClick={() => setHover(s => !s)}>&nbsp;</a>
           <div className={`about-us_info ${hover ? 'show' : ''}`}>
             <a href={`mailto:${email}`}>{email}</a>
             <p className="medium-bold">{phone}</p>

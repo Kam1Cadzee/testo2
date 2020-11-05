@@ -1,5 +1,6 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import {data} from '../pages/Surfaces';
+import useMedia from 'use-media';
 
 interface IFloorModalProps {
   show: boolean;
@@ -11,6 +12,8 @@ interface IFloorModalProps {
 
 
 const FloorModal = ({index, onClose, show, setIndex, openContact}: IFloorModalProps) => {
+  const is767 = useMedia({maxWidth: '767px'});
+
   const handleClose = () => {
     onClose();
   };
@@ -64,11 +67,12 @@ const FloorModal = ({index, onClose, show, setIndex, openContact}: IFloorModalPr
             <li>Surface <span className="bold">{detail.surface}</span> m<sup>2</sup></li>
             <li>Surface minimum <span className="bold">{detail.min}</span> m<sup>2</sup></li>
           </ul>
-          <div className="owl-carousel owl-theme floor-slider">
-            <figure className="plan-floor"><img src={detail.images[0]}/></figure>
-            <figure className="vue"><img src={detail.images[1]}/></figure>
-            <figure className="plan-floor"><img src={detail.images[2]}/></figure>
-          </div>
+         <div style={{position: 'relative'}}>
+           <div className="owl-carousel owl-theme floor-slider">
+             {detail.images[0] && <figure className="plan-floor"><img src={detail.images[0]}/></figure>}
+             {detail.images[1] && <figure className="plan-floor"><img src={detail.images[1]}/></figure>}
+           </div>
+         </div>
           <span className="icon-compass"></span>
           <a onClick={handleOpenContact} className="btn btn-contact" >Contact</a>
           <div className="floor-count">

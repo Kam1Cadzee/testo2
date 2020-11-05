@@ -85,10 +85,10 @@ const DownloadModal = ({onClose, show}:IDownloadModalProps) => {
                      <Input errors={errors} label={'Email'} name="email" value={watch('email')} ref={register({ required: 'Veuillez remplir les champs obligatoires', pattern })} />
                      <div className="form-item form-checkbox">
                        <input type="checkbox" name="checkbox2" hidden id="checkbox2"  ref={register({ required: 'Veuillez accepter les conditions' })} />
-                       <label htmlFor="checkbox2">J’ai lu et j’accepete la politique de confidentialité de ce site</label>
+                       <label htmlFor="checkbox2">J’ai lu et j’accepte la politique de confidentialité de ce site</label>
                        {error && <p className={'error-input'}>{error}</p>}
                      </div>
-                     <button type="submit" className="btn" disabled={loading}>Obtenir la brochure</button>
+                     <button type="submit" className="btn" disabled={loading}>RECEVOIR la brochure</button>
                    </form>
                  )
                }

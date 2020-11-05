@@ -493,6 +493,7 @@ a.btn{line-height:6rem}
     .map-caption_cols-duplicate{flex-flow:row wrap;padding:0 0 2rem}
     .col-4{flex:0 0 50%;width:50%;margin-bottom:4.5rem}
     .col-4:nth-child(2n){padding:0 0 0 2rem}
+    .col-4:nth-child(3){padding-left:0}
     .btn-plans{width:32rem}
     .floor-modal .modal-body{position:relative}
     .floor-count{position:relative;top:auto;right:0;background-color:#2e353b;color:#fff;margin:3rem -3rem 0;padding:0 3rem 9rem;transform:none}
@@ -584,7 +585,7 @@ a.btn{line-height:6rem}
     .about-us_name{font-size:2.4rem}
     .about-us_link{width:4rem;height:4rem}
     .about-us_link:before{width:1.6rem;height:.9rem}
-    .about-us_info{font-size:1.6rem;height:1rem}
+    .about-us_info{font-size:1.6rem;height:7rem}
     .about-us_info p{font-size:1.8rem}
     .map h2{font-size:3rem}
     .footer-content{border-top-width:.5rem;font-size:1.8rem}

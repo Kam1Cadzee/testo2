@@ -55,8 +55,96 @@
 .surfaces .welcome-bottom, .surfaces-bottom {
     position: fixed;
 }
+.floor-modal_info {
+    font-size: 2.6rem;
+}
+.extraText {
+    position: absolute;
+    right: 7rem;
+    bottom: 5rem;
+    width: 29rem;
+    font-size: 2rem;
+    text-align: right;
+}
+.main-h2 {
+    font-size: 4rem;
+}
+.infoDiv {
+    bottom: 5rem;
+    width: 1.8rem;
+    height: 1.8rem;
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border: 1px solid black;
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 100;
+}
+.wrapperInfo {
+    background-color: rgba(46, 53, 59, 0.4);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 10;
+}
+.blockInfo {
+    z-index: 100000;
+    /* background: white; */
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 10rem;
+}
+.blockInfo .extraText {
+    background-color: white;
+    text-align: center;
+    padding: 1rem;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
+.triangle-down {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 12px solid white;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+.floor-slider .plan-floor img {
+    width: 47.2rem !important;
+}
+.header-menu a.active {
+    color: #00574a;
+    font-weight: 600;
+}
+.brochure-label {
+    opacity: 0.4;
+}
+.brochure-label:hover {
+    opacity: 1;
+}
+h1 {
+    font-size: 4rem;
+}
 @media screen and (max-width: 639px) {
     .surfaces-bottom {
         bottom: 0;
+    }
+    .main-cols_text {
+        text-align: justify;
     }
 }

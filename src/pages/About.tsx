@@ -33,7 +33,7 @@ const About = () => {
             ville se mêle à la nature.</p>
           <figure className="main-pic"><img src={advantage2} /></figure>
           <h1>O<sub>2</sub>, où vous attend votre futur professionnel</h1>
-          <p className="main-subtitle">Vos futures surfaces O<sub>2</sub> ont été pensés par un bureau d’architecture à la
+          <p className="main-subtitle">Vos futures surfaces O<sub>2</sub> ont été pensées par un bureau d’architecture à la
             renommée internationale. <span className="medium-bold">Bassi Carella Marello</span> ont conjugué innovations
             techniques et environnementales pour construire un projet idéal, prêt à accueillir le futur de votre
             activité professionnelle.</p>

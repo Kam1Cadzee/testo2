@@ -16,6 +16,7 @@ import planFloor4 from '../assets/img/floors/plan-floor-4.png';
 import planFloor5 from '../assets/img/floors/plan-floor-5.png';
 import planFloor6 from '../assets/img/floors/plan-floor-6.png';
 import planFloor11 from '../assets/img/floors/floor11.jpg';
+import planFloor00 from '../assets/img/floors/floor00.jpg';
 import planFloor12 from '../assets/img/floors/floor12.jpg';
 import planFloor13 from '../assets/img/floors/floor13.jpg';
 import planFloor14 from '../assets/img/floors/floor14.jpg';
@@ -39,49 +40,49 @@ const data = [
     title: 'Rez-de-chaussée',
     surface: 950.45,
     min: 300,
-    images: [planFloor, vueCorch, planFloor11]
+    images: [planFloor00]
   },
   {
     id: 1,
     title: '1 er étage',
     surface: '1’151.40',
     min: 300,
-    images: [planFloor1, vueCorch, planFloor11]
+    images: [planFloor1, planFloor11]
   },
   {
     id: 2,
     title: '2 ème étage',
     surface: '1’151.40',
     min: 300,
-    images: [planFloor2, vueCorch, planFloor12]
+    images: [planFloor2, planFloor12]
   },
   {
     id: 3,
     title: '3 ème étage',
     surface: '1’151.40',
     min: 300,
-    images: [planFloor3, vueCorch, planFloor13]
+    images: [planFloor3, planFloor13]
   },
   {
     id: 4,
     title: '4 ème étage',
     surface: '1’156.70',
     min: 300,
-    images: [planFloor4, vueCorch, planFloor14]
+    images: [planFloor4, planFloor14]
   },
   {
     id: 5,
     title: '5 ème étage',
     surface: '1’156.70',
     min: 300,
-    images: [planFloor5, vueCorch, planFloor15]
+    images: [planFloor5, planFloor15]
   },
   {
     id: 6,
     title: '6 ème étage',
     surface: 546.55,
     min: 300,
-    images: [planFloor6, vueCorch, planFloor16]
+    images: [planFloor16]
   },
 ];
 const imgRatio = 2160 / 1353;
@@ -89,7 +90,7 @@ const imgRatio = 2160 / 1353;
 const Surfaces = () => {
   const location = useLocation();
   const { innerWidth, innerHeight, outerHeight, outerWidth } = useWindowSize();
-  const [index, setIndex] = useState(0);
+  const [index, setIndex] = useState(1);
   const [show, setShow] = useState(false);
   const [isContactShow, setIsContactShow] = useState(false);
 
@@ -111,7 +112,7 @@ const Surfaces = () => {
     const res = {
       name: "my-map",
       areas: coords.map((c, i) => {
-        return { name: (i + 1) + '', shape: "poly", coords: c, fillColor, preFillColor: index === i ? fillColor : null  }
+        return { name: (i + 1) + '', shape: "poly", coords: c, fillColor: index !== i ? fillColor : 'transparent', preFillColor: index === i ? fillColor : null  }
       })
     }
 

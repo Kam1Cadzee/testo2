@@ -4,7 +4,7 @@ import Header from '../components/Header';
 import slide1 from '../assets/img/slide1.jpg';
 import advantage1 from '../assets/img/advantage1.jpg';
 import advantage2 from '../assets/img/advantage2.jpg';
-import advantage3 from '../assets/img/advantage3.jpg';
+import advantage3 from '../assets/img/advantage3.png';
 import gregoire from '../assets/img/gregoire-marra.png';
 import gaetan from '../assets/img/gaetan-bellec.png';
 import chiste from '../assets/img/chiste-fabiola.png';
@@ -163,8 +163,8 @@ const Main = () => {
           <div className="map-scroll">
             <figure className="map-figure">
               <img src={map} className="map-pic" />
-                <span className="icon-swipe">&nbsp;</span>
                 <figcaption className="map-caption">
+                  <span className="icon-swipe" style={{left: '2rem'}}>&nbsp;</span>
                   <div className="map-caption_block">
                     <span className="map-caption_arrow arrow-green"><img src={icArrowGreen} /></span>
                     <span>Voie verte</span>
