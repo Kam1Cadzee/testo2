@@ -124,6 +124,13 @@
     left: 0;
     right: 0;
 }
+.floor-slider .plan-floor img {
+    width: 47.2rem !important;
+}
+.header-menu a.active {
+    color: #00574a;
+    font-weight: 600;
+}
 @media screen and (max-width: 639px) {
     .surfaces-bottom {
         bottom: 0;
