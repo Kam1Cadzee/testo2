@@ -2,6 +2,8 @@ import React, {useEffect, useState} from 'react';
 import {data} from '../pages/Surfaces';
 import useMedia from 'use-media';
 
+import Carousel from 'react-multi-carousel';
+
 interface IFloorModalProps {
   show: boolean;
   onClose: any;
@@ -17,19 +19,6 @@ const FloorModal = ({index, onClose, show, setIndex, openContact}: IFloorModalPr
   const handleClose = () => {
     onClose();
   };
-
-  useEffect(() => {
-    const staticPath = process.env.PUBLIC_URL + '/js/';
-
-    let swipe = document.createElement('script');
-    swipe.src = staticPath + 'floorSlider.js';
-    swipe.id = 'floorSlider-js';
-    document.body.appendChild(swipe);
-
-    return () => {
-      swipe.remove();
-    };
-  }, [show]);
 
   if(!show) return null;
 
@@ -67,11 +56,67 @@ const FloorModal = ({index, onClose, show, setIndex, openContact}: IFloorModalPr
             <li>Surface <span className="bold">{detail.surface}</span> m<sup>2</sup></li>
             <li>Surface minimum <span className="bold">{detail.min}</span> m<sup>2</sup></li>
           </ul>
-         <div style={{position: 'relative'}}>
-           <div className="owl-carousel owl-theme floor-slider">
-             {detail.images[0] && <figure className="plan-floor"><img src={detail.images[0]}/></figure>}
-             {detail.images[1] && <figure className="plan-floor"><img src={detail.images[1]}/></figure>}
-           </div>
+         <div style={{position: 'relative'}} className={'floor-slider'}>
+           {index === 0 || index === 6 ? (
+             <Carousel
+               key={1}
+               responsive={{
+                 minimobile: {
+                   breakpoint: { max: 3000, min: 0 },
+                   items: 1,
+                   slidesToSlide: 1
+                 }
+               }}
+               itemClass="carousel-item-li"
+               containerClass="floor-slider"
+               focusOnSelect={false}
+               transitionDuration={100}
+               draggable={true}
+               swipeable={true}
+               arrows={false}
+               showDots={false}
+               renderDotsOutside
+               dotListClass="owl-dots"
+               deviceType="desktop"
+             >
+               {
+                 detail.images.map(img => {
+                   return <figure className="plan-floor"><img src={img}/></figure>
+                 })
+               }
+             </Carousel>
+           ) : (
+             <Carousel
+               key={2}
+               responsive={{
+                 minimobile: {
+                   breakpoint: { max: 3000, min: 0 },
+                   items: 1,
+                   slidesToSlide: 1
+                 }
+               }}
+               itemClass="carousel-item-li"
+               focusOnSelect={false}
+               transitionDuration={100}
+               renderButtonGroupOutside
+               draggable={false}
+               swipeable={true}
+               arrows={false}
+               showDots={true}
+               infinite
+               renderDotsOutside
+               dotListClass="owl-dots"
+               deviceType="desktop"
+               customButtonGroup={<ButtonGroup/>}
+               customDot={<CustomDot/>}
+             >
+               {
+                 detail.images.map(img => {
+                   return <figure className="plan-floor"><img src={img} unselectable={'off'}/></figure>
+                 })
+               }
+             </Carousel>
+           )}
          </div>
           <span className="icon-compass"></span>
           <a onClick={handleOpenContact} className="btn btn-contact" >Contact</a>
@@ -92,6 +137,34 @@ const FloorModal = ({index, onClose, show, setIndex, openContact}: IFloorModalPr
     </div>
   </>
   )
+};
+export const CustomDot = ({onClick, ...rest}: any) => {
+  const {
+    active,
+    carouselState: {
+      deviceType
+    }
+  } = rest;
+
+  return (
+    <button
+      className={active ? 'owl-dot active' : 'owl-dot'}
+      onClick={onClick}
+    />
+  );
+};
+
+const ButtonGroup = ({next, previous, goToSlide, ...rest}: any) => {
+  const {carouselState: {currentSlide, deviceType, slidesToShow, totalItems}} = rest;
+  if (['tablet', 'mobile'].some(s => s === deviceType)) {
+    return null;
+  }
+  return (
+    <div className="owl-nav">
+      <button className={currentSlide === 0 ? 'owl-prev disabled' : 'owl-prev'} onClick={previous}/>
+      <button className={currentSlide + slidesToShow >= totalItems ? 'owl-next disabled' : 'owl-next'} onClick={next}/>
+    </div>
+  );
 };
 
 export default FloorModal;

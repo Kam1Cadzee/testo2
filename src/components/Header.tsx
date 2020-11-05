@@ -52,7 +52,7 @@ const Header = ({isGreen = false, isScroll = true}:IHeaderProps) => {
         )
       }
     <header className={`header ${scrollY > 50 || isScroll ? 'scroll' : ''}`}>
-      <Link to="/" className="header-logo"><img src={isGreen ? logoGR : logo} alt="O2 Belle Terre (logo)" /></Link>
+      <Link to="/" className="header-logo"><img src={isGreen || scrollY > 50 ? logoGR : logo} alt="O2 Belle Terre (logo)" /></Link>
       {
         (!is1140) && (
           <div className="mobile-menu">

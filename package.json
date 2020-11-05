@@ -19,6 +19,7 @@
     "react-dom": "^17.0.1",
     "react-hook-form": "^6.9.6",
     "react-image-mapper": "^0.0.15",
+    "react-multi-carousel": "^2.5.5",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.0",
     "react-use-scroll-position": "^2.0.0",

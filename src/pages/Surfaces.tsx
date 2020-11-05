@@ -47,35 +47,35 @@ const data = [
     title: '1 er étage',
     surface: '1’151.40',
     min: 300,
-    images: [planFloor1, planFloor11]
+    images: [planFloor11, planFloor12, planFloor13, planFloor14, planFloor15]
   },
   {
     id: 2,
     title: '2 ème étage',
     surface: '1’151.40',
     min: 300,
-    images: [planFloor2, planFloor12]
+    images: [planFloor11, planFloor12, planFloor13, planFloor14, planFloor15]
   },
   {
     id: 3,
     title: '3 ème étage',
     surface: '1’151.40',
     min: 300,
-    images: [planFloor3, planFloor13]
+    images: [planFloor11, planFloor12, planFloor13, planFloor14, planFloor15]
   },
   {
     id: 4,
     title: '4 ème étage',
     surface: '1’156.70',
     min: 300,
-    images: [planFloor4, planFloor14]
+    images: [planFloor11, planFloor12, planFloor13, planFloor14, planFloor15]
   },
   {
     id: 5,
     title: '5 ème étage',
     surface: '1’156.70',
     min: 300,
-    images: [planFloor5, planFloor15]
+    images: [planFloor11, planFloor12, planFloor13, planFloor14, planFloor15]
   },
   {
     id: 6,
@@ -90,7 +90,7 @@ const imgRatio = 2160 / 1353;
 const Surfaces = () => {
   const location = useLocation();
   const { innerWidth, innerHeight, outerHeight, outerWidth } = useWindowSize();
-  const [index, setIndex] = useState(1);
+  const [index, setIndex] = useState(0);
   const [show, setShow] = useState(false);
   const [isContactShow, setIsContactShow] = useState(false);
 
@@ -153,7 +153,10 @@ const Surfaces = () => {
       <Header isScroll={false} />
 
       <div className={'wrapper-img'}>
-        <ImageMapper active={true} src={URL} map={MAP} width={innerWidth} height={innerHeight! - ((index + 1) / 10)} onClick={(evt: any) => handleClick(+evt.name)}/>
+        <ImageMapper active={true} src={URL} map={MAP} width={innerWidth} height={innerHeight! - ((index + 1) / 10)} onClick={(evt: any) => {
+          handleClick(+evt.name);
+          setShow(true);
+        }}/>
       </div>
       <Link to="/view3d" target={'_blank'}>
       <figure className="pic-view3D">

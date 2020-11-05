@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {BrowserRouter, Route, Switch, useLocation} from 'react-router-dom'
+import 'react-multi-carousel/lib/styles.css';
 import './App.css';
 import Footer from './components/Footer';
 import Main from './pages/Main';
