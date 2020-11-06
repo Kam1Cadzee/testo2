@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/testo2/static/css/main.142a5328.chunk.css",
-    "main.js": "/testo2/static/js/main.a034cd97.chunk.js",
-    "main.js.map": "/testo2/static/js/main.a034cd97.chunk.js.map",
+    "main.js": "/testo2/static/js/main.accaf060.chunk.js",
+    "main.js.map": "/testo2/static/js/main.accaf060.chunk.js.map",
     "runtime-main.js": "/testo2/static/js/runtime-main.564a927f.js",
     "runtime-main.js.map": "/testo2/static/js/runtime-main.564a927f.js.map",
     "static/css/2.cc638247.chunk.css": "/testo2/static/css/2.cc638247.chunk.css",
@@ -16,17 +16,18 @@
     "static/js/2.44539212.chunk.js.LICENSE.txt": "/testo2/static/js/2.44539212.chunk.js.LICENSE.txt",
     "static/media/advantage1.9a6542cd.jpg": "/testo2/static/media/advantage1.9a6542cd.jpg",
     "static/media/advantage2.44da71cd.jpg": "/testo2/static/media/advantage2.44da71cd.jpg",
+    "static/media/advantage2.ba2950b4.png": "/testo2/static/media/advantage2.ba2950b4.png",
     "static/media/advantage3.bc93240f.png": "/testo2/static/media/advantage3.bc93240f.png",
     "static/media/bg-modal.76879427.jpg": "/testo2/static/media/bg-modal.76879427.jpg",
     "static/media/bg-surface.9a8a66cf.jpg": "/testo2/static/media/bg-surface.9a8a66cf.jpg",
     "static/media/chiste-fabiola.3bf7f186.png": "/testo2/static/media/chiste-fabiola.3bf7f186.png",
-    "static/media/floor00.e9268887.jpg": "/testo2/static/media/floor00.e9268887.jpg",
-    "static/media/floor11.a06da27c.jpg": "/testo2/static/media/floor11.a06da27c.jpg",
-    "static/media/floor12.92de73b1.jpg": "/testo2/static/media/floor12.92de73b1.jpg",
-    "static/media/floor13.b8ed35e0.jpg": "/testo2/static/media/floor13.b8ed35e0.jpg",
-    "static/media/floor14.c3e5470a.jpg": "/testo2/static/media/floor14.c3e5470a.jpg",
-    "static/media/floor15.ba71ed0e.jpg": "/testo2/static/media/floor15.ba71ed0e.jpg",
-    "static/media/floor16.b6611379.jpg": "/testo2/static/media/floor16.b6611379.jpg",
+    "static/media/floor00.ef5c0f1f.jpg": "/testo2/static/media/floor00.ef5c0f1f.jpg",
+    "static/media/floor11.30257e49.jpg": "/testo2/static/media/floor11.30257e49.jpg",
+    "static/media/floor12.87822b8f.jpg": "/testo2/static/media/floor12.87822b8f.jpg",
+    "static/media/floor13.1efef371.jpg": "/testo2/static/media/floor13.1efef371.jpg",
+    "static/media/floor14.33f30b48.jpg": "/testo2/static/media/floor14.33f30b48.jpg",
+    "static/media/floor15.66867f44.jpg": "/testo2/static/media/floor15.66867f44.jpg",
+    "static/media/floor16.35986b9a.jpg": "/testo2/static/media/floor16.35986b9a.jpg",
     "static/media/gaetan-bellec.d1fd4c62.png": "/testo2/static/media/gaetan-bellec.d1fd4c62.png",
     "static/media/gregoire-marra.0720e282.png": "/testo2/static/media/gregoire-marra.0720e282.png",
     "static/media/ic-arrow-brown.2173250d.svg": "/testo2/static/media/ic-arrow-brown.2173250d.svg",
@@ -45,7 +46,7 @@
     "static/media/logo.0a270780.svg": "/testo2/static/media/logo.0a270780.svg",
     "static/media/logo_gr.ed92d2c3.svg": "/testo2/static/media/logo_gr.ed92d2c3.svg",
     "static/media/map.14a235ef.png": "/testo2/static/media/map.14a235ef.png",
-    "static/media/pic1.9469c191.jpg": "/testo2/static/media/pic1.9469c191.jpg",
+    "static/media/pic1.9ee75942.png": "/testo2/static/media/pic1.9ee75942.png",
     "static/media/pic2.3a43067d.jpg": "/testo2/static/media/pic2.3a43067d.jpg",
     "static/media/styles.css": "/testo2/static/media/revicons.e8746a62.woff",
     "static/media/slide1.4bfad16f.jpg": "/testo2/static/media/slide1.4bfad16f.jpg"
@@ -55,6 +56,6 @@
     "static/css/2.cc638247.chunk.css",
     "static/js/2.44539212.chunk.js",
     "static/css/main.142a5328.chunk.css",
-    "static/js/main.a034cd97.chunk.js"
+    "static/js/main.accaf060.chunk.js"
   ]
 }
