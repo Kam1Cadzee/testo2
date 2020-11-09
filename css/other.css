@@ -223,6 +223,17 @@ h1 {
     right: 6rem;
     bottom: 4rem;
 }
+.floorLink {
+    position: absolute;
+    z-index: 99999999999;
+    bottom: 0;
+    right: 0;
+}
+@media screen and (max-width: 991px) {
+    .brochure-label {
+        opacity: 1;
+    }
+}
 @media screen and (max-width: 767px) {
     .iziModal .pic-view3D {
         display: none;
