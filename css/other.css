@@ -227,6 +227,13 @@ h1 {
     .iziModal .pic-view3D {
         display: none;
     }
+    .titleFloor {
+        top: 100%;
+        font-size: 22px;
+    }
+    .floor-modal_info {
+        font-size: 2rem;
+    }
 }
 @media screen and (max-width: 639px) {
     .surfaces-bottom {

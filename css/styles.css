@@ -110,6 +110,7 @@ a.btn{line-height:6rem}
 .surfaces-paging_down:before{background-color:rgba(255,255,255,.5);content:'';display:block;width:5rem;height:.1rem;opacity:.5;position:absolute;top:0;left:50%;transform:translateX(-50%)}
 
 .header.scroll{background-color:#fff;height:14rem;margin-bottom:0;padding-top:2rem;position:fixed;top:0;left:0;width:100%;z-index:20}
+.header.scroll:after{display:none}
 .header.scroll .header-logo{top:2rem}
 .welcome .header.scroll .header-logo .logo-w{display:none}
 .welcome .header.scroll .header-logo .logo-gr{display:block}
@@ -130,23 +131,17 @@ a.btn{line-height:6rem}
 .advantage-content .text p{padding-top:4rem}
 .advantage-content .btn{width:100%}
 
-.view3D{padding-bottom:8rem}
-.icon-3D{background:url(../img/icons/ic-3d.svg) 0 0 no-repeat;background-size:cover;display:block;width:4rem;height:2.7rem}
-.view3D .icon-3D{position:absolute;top:1.5rem;left:7.8rem;z-index:3}
-.slider-3D-title{position:absolute;top:1.5rem;left:14.8rem;z-index:2;border-left:.1rem solid rgba(46,53,59,.4);font-size:1.8rem;height:3rem;line-height:3rem;padding-left:3rem;width:35rem}
-.slider-3D-title .item{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:100%}
-.slider-3D{padding-top:7rem;position:relative}
-.slider-3D:before{background-color:#EFF0F1;content:'';display:block;width:100%;height:6rem;position:absolute;top:0;left:0}
-.slider-3D .owl-nav{position:absolute;top:1.8rem;right:.4rem}
-.slider-3D .owl-nav button.owl-next, .slider-3D .owl-nav button.owl-prev{width:6.8rem;height:2.5rem;position:relative}
-.slider-3D .owl-nav button.owl-next{border-left:.1rem solid #cccecf}
-.slider-3D .owl-nav button.owl-next span, .slider-3D .owl-nav button.owl-prev span{display:none}
-.slider-3D .owl-nav button.owl-next:before, .slider-3D .owl-nav button.owl-prev:before{background:url(../img/icons/ic-arrow_vert.svg) 0 0 no-repeat;background-size:cover;content:'';display:block;width:1.2rem;height:2.1rem;position:absolute;top:50%;left:50%;transform:translate(-50%, -50%)}
-.slider-3D .owl-nav button.owl-next:before{transform:translate(-50%, -50%) rotate(-180deg)}
-.slider-3D .owl-nav button.owl-next.disabled:before, .slider-3D .owl-nav button.owl-prev.disabled:before{opacity:.5}
-.slider-3D .owl-dots{display:flex;position:absolute;top:2.9rem;left:50%;transform:translateX(-50%)}
-.slider-3D button.owl-dot, .floor-slider button.owl-dot{background-color:#848A90;width:6rem;height:.2rem;margin:0 1rem}
-.slider-3D button.owl-dot.active, .floor-slider button.owl-dot.active{background-color:#8ec051}
+.view3D{color:#2e353b;font-family:'FuturaPT Medium', Arial, Helvetica, sans-serif;margin-bottom:7rem;padding:5rem 0;position:relative}
+.view3D:before{background-color:#d7d9db;content:'';display:block;width:calc(100% - 9.6rem);height:.1rem;position:absolute;top:0;left:4.8rem}
+.view3D:after{background-color:#d7d9db;content:'';display:block;width:calc(100% - 9.6rem);height:.1rem;position:absolute;bottom:0;left:4.8rem}
+.view3D h2{color:#00574a;font-family:'FuturaPT Medium', Arial, Helvetica, sans-serif;font-size:4.8rem;max-width:84rem;margin-bottom:8rem;text-align:left}
+.slider-3D{display:flex;justify-content:flex-end;padding-left:4.5rem;margin:0 -1.3rem}
+.slider-3D .col-3{flex:0 0 33.333333%;width:33.333333%;padding:0 1.3rem}
+.slider-3D .slide{margin-bottom:2rem;position:relative}
+.icon-3D{background:#00574a url(../img/icons/ic-3d_w.svg) 50% 50% no-repeat;background-size:4rem 2.8rem;display:block;width:5.5rem;height:4.5rem}
+.slider-3D .icon-3D{position:absolute;bottom:1rem;right:1rem;z-index:3}
+.slider-3D .slide img{width:100%}
+.slider-3D p{line-height:1.58;}
 
 .about-us{overflow:hidden;display:flex;flex-direction:column;justify-content:space-between;padding:0 4.8rem}
 .about-us_container{background-color:#2e353b;color:#fff;padding:6rem 5.1rem}
@@ -336,6 +331,9 @@ a.btn{line-height:6rem}
     .header:after{left:2.5rem;width:calc(100% - 5rem)}
     .header-logo, .pic-view3D{left:2.5rem}
     .header .btn{right:2.5rem}
+    .view3D:before, .view3D:after{width:calc(100% - 5rem);left:2.5rem}
+    .map-content{margin:0 -2.5rem}
+    .map-content_col{padding:0 2.5rem}
 }
 
 @media screen and (max-width: 1399px) {
@@ -424,6 +422,10 @@ a.btn{line-height:6rem}
     .contact-form_col:nth-child(2) > div{border-top:.1rem solid #8ec051;padding-top:2rem}
     .form-radio_block{margin-bottom:2rem}
     .question{font-size:2.4rem;margin-bottom:3rem}
+    .view3D{font-size:2rem}
+    .slider-3D{flex-direction:column;align-items:center;margin:0;padding-left:0}
+    .slider-3D .col-3{flex:1 0 0;width:43rem;padding:3rem 0 0}
+    .slider-3D .col-3:first-child{padding:0}
     .aboutus-slider{display:block !important;}
     .aboutus-slider .owl-nav button.owl-next, .aboutus-slider .owl-nav button.owl-prev{background:url(../img/icons/ic-arrow.svg) 0 0 no-repeat;background-size:cover;position:absolute;bottom:0;left:0;display:block;width:3.2rem;height:1.8rem;transform:rotate(90deg)}
     .aboutus-slider .owl-nav button.owl-next.disabled, .aboutus-slider .owl-nav button.owl-prev.disabled{opacity:.5}
@@ -482,6 +484,7 @@ a.btn{line-height:6rem}
     .advantage-one{margin-top:9rem}
     .brochure-title{font-size:3rem;top:10.5rem}
     .brochure-title p{font-size:4rem}
+    .view3D h2{font-size:4rem;margin-bottom:4rem;}
     .about-us_title{font-size:3rem}
     .about-us_title p{font-size:4rem}
     .map-content{margin:0 -1.5rem}
@@ -512,22 +515,13 @@ a.btn{line-height:6rem}
     .brochure-label{top:3.5rem;right:7.5rem}
     .mobile-menu{padding:8.5rem 1.5rem}
     .container, .about-us, .welcome-bottom{padding:0 1.5rem}
-    /*.welcome{padding-top:1.5rem}*/
     .header{padding-bottom:2.5rem;justify-content:center}
     .header:after{left:1.5rem;width:calc(100% - 3rem)}
     .header.scroll{height:10.4rem}
     .header-logo, .header.scroll .header-logo{left:1.5rem;top:1.5rem}
-    /*.welcome .header-logo{left:0;top:0}*/
     .btn-mobile{top:1.5rem;right:1.5rem}
-    /*.welcome .btn-mobile{top:0;right:0}*/
     .advantage-one .subtitle{font-size:4rem}
-    .slider-3D-title{top:.5rem;left:6.6rem;border-left:none;font-size:1.4rem;padding-left:0;width:15rem}
-    .slider-3D{padding-top:5rem}
-    .slider-3D:before{height:4rem}
-    .view3D .icon-3D{width:3rem;height:2rem;top:1rem;left:2.5rem}
-    .slider-3D .owl-nav{top:1rem}
-    .slider-3D .owl-nav button.owl-next, .slider-3D .owl-nav button.owl-prev{height:2rem;width:4.4rem}
-    .slider-3D .owl-nav button.owl-next:before, .slider-3D .owl-nav button.owl-prev:before{width:.9rem;height:1.6rem}
+    .view3D:before, .view3D:after{width:calc(100% - 3rem);left:1.5rem}
     .about-us{padding:0}
     .map-scroll{margin:0 -1.5rem 4rem}
     .map-caption{left:1.5rem;bottom:1.5rem;width:calc(100% - 3rem)}
@@ -578,6 +572,8 @@ a.btn{line-height:6rem}
     .advantage-one .subtitle{font-size:3rem;line-height:1.4;margin-bottom:2.4rem}
     .advantage-content .text, .main-subtitle{width:100%;padding-left:2.3rem}
     .advantage-content .text p{margin-left:-2.3rem;padding-top:2.4rem}
+    .view3D h2{font-size:3.4rem;margin-bottom:3rem}
+    .slider-3D .col-3{width:100%}
     .about-us_container{padding:3rem 1.5rem}
     .about-us_top{text-align:left}
     .about-us_logo{margin:0 0 3rem}
