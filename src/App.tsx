@@ -10,6 +10,8 @@ import About from './pages/About';
 import Localisation from './pages/Localisation';
 import Surfaces from './pages/Surfaces';
 import FullView3D from './pages/FullView3D';
+// @ts-ignore
+import ReactCursorPosition from 'react-cursor-position';
 
 function App() {
   const [isDownloadShow, setIsDownloadShow] = useState(false);
@@ -33,7 +35,7 @@ function App() {
         <Route exact path={'/'} component={Main} />
         <Route exact path={'/about'} component={About} />
         <Route exact path={'/localisation'} component={Localisation} />
-        <Route exact path={'/surfaces'} component={Surfaces} />
+        <Route exact path={'/surfaces'} component={() => <ReactCursorPosition><Surfaces /></ReactCursorPosition>} />
         <Route exact path={'/view3d'} component={FullView3D} />
       </Switch>
       <DownloadModal onClose={() => setIsDownloadShow(false)} show={isDownloadShow}/>

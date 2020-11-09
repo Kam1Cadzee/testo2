@@ -87,13 +87,14 @@ const data = [
 ];
 const imgRatio = 2160 / 1353;
 
-const Surfaces = () => {
+const Surfaces = ({position}: any) => {
   const location = useLocation();
   const { innerWidth, innerHeight, outerHeight, outerWidth } = useWindowSize();
   const [index, setIndex] = useState(0);
   const [show, setShow] = useState(false);
   const [isContactShow, setIsContactShow] = useState(false);
-
+  const [center, setCenter] = useState(false);
+  console.log(position)
   useEffect(() => {
     const staticPath = process.env.PUBLIC_URL + '/js/';
 
@@ -101,10 +102,8 @@ const Surfaces = () => {
     swipe.src = staticPath + 'scripts.js';
     swipe.id = 'swipe-js';
     document.body.appendChild(swipe);
-    document.body.style.overflow = 'hidden';
     return () => {
       swipe.remove();
-      document.body.style.overflow = 'scroll';
     };
   }, []);
 
@@ -153,7 +152,20 @@ const Surfaces = () => {
       <Header isScroll={false} />
 
       <div className={'wrapper-img'}>
-        <ImageMapper active={true} src={URL} map={MAP} width={innerWidth} height={innerHeight! - ((index + 1) / 10)} onClick={(evt: any) => {
+        {
+          center && <div className={'circle'} style={{
+            top: position.y - 70,
+            left: position.x
+          }}>
+            Cliquez pour voir les plans
+            <div className={'triangle-down'}></div>
+          </div>
+        }
+        <ImageMapper active={true} src={URL} map={MAP} width={innerWidth} height={innerHeight! - ((index + 1) / 10)} onMouseEnter={(evt: any) => {
+          setCenter(true)
+        }} onMouseLeave={() => {
+          setCenter(false)
+        }} onClick={(evt: any) => {
           handleClick(+evt.name);
           setShow(true);
         }}/>

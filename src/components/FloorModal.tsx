@@ -3,6 +3,8 @@ import {data} from '../pages/Surfaces';
 import useMedia from 'use-media';
 
 import Carousel from 'react-multi-carousel';
+import {Link} from 'react-router-dom';
+import slide1 from '../assets/img/slide1.jpg';
 
 interface IFloorModalProps {
   show: boolean;
@@ -12,13 +14,23 @@ interface IFloorModalProps {
   openContact: any;
 }
 
+const titles = ['Plateau complet', 'Division en 2', 'Division en 3', 'Division en 4', 'Division en 5'];
 
 const FloorModal = ({index, onClose, show, setIndex, openContact}: IFloorModalProps) => {
   const is767 = useMedia({maxWidth: '767px'});
+  const [zoomIndex, setZoomIndex] = useState(-1);
+  const [ind, setInd] = useState(0);
 
   const handleClose = () => {
+    setZoomIndex(-1)
     onClose();
   };
+
+  useEffect(() => {
+    if(index === 0 || index === 6) {
+      setInd(0);
+    }
+  }, [index]);
 
   if(!show) return null;
 
@@ -39,23 +51,41 @@ const FloorModal = ({index, onClose, show, setIndex, openContact}: IFloorModalPr
     openContact();
   };
 
+
+
   const detail = data.find(d => d.id === index)!;
 
   return (
 <>
+
+  {
+    zoomIndex !== -1 && (
+      <div  className={'zoomimg'} ><img src={detail.images[zoomIndex]}onClick={() => setZoomIndex(-1)} /></div>
+    )
+  }
     <div className="iziModal-overlay" onClick={handleClose}></div>
     <div className="iziModal isAttached floor-modal">
+      <Link to="/view3d" target={'_blank'}>
+        <figure className="pic-view3D">
+          <img src={slide1} />
+          <span className="icon-3D dark">&nbsp;</span>
+        </figure>
+      </Link>
       <div className="iziModal-wrap">
         <div className="iziModal-content">
       <div className="modal-body">
+
         <div className="modal-content">
           <button className="modal-close" onClick={handleClose}>&nbsp;</button>
 
           <h3>{detail.title}</h3>
-          <ul className="floor-modal_info">
-            <li>Surface <span className="bold">{detail.surface}</span> m<sup>2</sup></li>
-            <li>Surface minimum <span className="bold">{detail.min}</span> m<sup>2</sup></li>
-          </ul>
+         <div style={{position: 'relative'}}>
+           {index !== 0 && index !== 6 && <p className={'titleFloor'}>{titles[ind]}</p>}
+           <ul className="floor-modal_info">
+             <li>Surface <span className="bold">{detail.surface}</span> m<sup>2</sup></li>
+             <li>Surface minimum <span className="bold">{detail.min}</span> m<sup>2</sup></li>
+           </ul>
+         </div>
          <div style={{position: 'relative'}} className={'floor-slider'}>
            {index === 0 || index === 6 ? (
              <Carousel
@@ -78,10 +108,11 @@ const FloorModal = ({index, onClose, show, setIndex, openContact}: IFloorModalPr
                renderDotsOutside
                dotListClass="owl-dots"
                deviceType="desktop"
+
              >
                {
-                 detail.images.map(img => {
-                   return <figure className="plan-floor"><img src={img}/></figure>
+                 detail.images.map((img, i) => {
+                   return <figure className="plan-floor"><img src={img} onClick={() => setZoomIndex(i)}/></figure>
                  })
                }
              </Carousel>
@@ -103,16 +134,19 @@ const FloorModal = ({index, onClose, show, setIndex, openContact}: IFloorModalPr
                swipeable={true}
                arrows={false}
                showDots={true}
-               infinite
                renderDotsOutside
                dotListClass="owl-dots"
                deviceType="desktop"
+               afterChange={(previousSlide, state) => {
+                 console.log(state)
+                 setInd(state.currentSlide)
+               }}
                customButtonGroup={<ButtonGroup/>}
                customDot={<CustomDot/>}
              >
                {
-                 detail.images.map(img => {
-                   return <figure className="plan-floor"><img src={img} unselectable={'off'}/></figure>
+                 detail.images.map((img, i) => {
+                   return <figure className="plan-floor"><img src={img} unselectable={'off'} onClick={() => setZoomIndex(i)}/></figure>
                  })
                }
              </Carousel>
