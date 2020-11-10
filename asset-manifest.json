@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/testo2/static/css/main.142a5328.chunk.css",
-    "main.js": "/testo2/static/js/main.266d8a41.chunk.js",
-    "main.js.map": "/testo2/static/js/main.266d8a41.chunk.js.map",
+    "main.js": "/testo2/static/js/main.1d97cb7e.chunk.js",
+    "main.js.map": "/testo2/static/js/main.1d97cb7e.chunk.js.map",
     "runtime-main.js": "/testo2/static/js/runtime-main.38800c1a.js",
     "runtime-main.js.map": "/testo2/static/js/runtime-main.38800c1a.js.map",
     "static/css/2.cc638247.chunk.css": "/testo2/static/css/2.cc638247.chunk.css",
@@ -17,7 +17,7 @@
     "static/media/advantage1.9a6542cd.jpg": "/testo2/static/media/advantage1.9a6542cd.jpg",
     "static/media/advantage2.44da71cd.jpg": "/testo2/static/media/advantage2.44da71cd.jpg",
     "static/media/advantage2.ba2950b4.png": "/testo2/static/media/advantage2.ba2950b4.png",
-    "static/media/advantage3.bc93240f.png": "/testo2/static/media/advantage3.bc93240f.png",
+    "static/media/advantage3.7407a2c4.png": "/testo2/static/media/advantage3.7407a2c4.png",
     "static/media/bg-modal.76879427.jpg": "/testo2/static/media/bg-modal.76879427.jpg",
     "static/media/bg-surface.9a8a66cf.jpg": "/testo2/static/media/bg-surface.9a8a66cf.jpg",
     "static/media/chiste-fabiola.3bf7f186.png": "/testo2/static/media/chiste-fabiola.3bf7f186.png",
@@ -58,6 +58,6 @@
     "static/css/2.cc638247.chunk.css",
     "static/js/2.8ea5aaa9.chunk.js",
     "static/css/main.142a5328.chunk.css",
-    "static/js/main.266d8a41.chunk.js"
+    "static/js/main.1d97cb7e.chunk.js"
   ]
 }

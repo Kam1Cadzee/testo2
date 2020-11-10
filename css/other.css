@@ -229,6 +229,12 @@ h1 {
     bottom: 0;
     right: 0;
 }
+.withoutBorder::after {
+    content: none;
+}
+.header.scrollBorder {
+    border-bottom: 1px solid #D7D9DB;
+}
 @media screen and (max-width: 991px) {
     .brochure-label {
         opacity: 1;
