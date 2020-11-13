@@ -11,7 +11,7 @@ const View3D = ({isBorder = true}:IView3DProps) => {
   return (
     <div className={`view3D ${!isBorder ? 'withoutBorder' : ''}`}>
       <div className="container position-relative">
-        <h2>Découvrez à quoi pourrait ressembler vos surfaces d’activité.</h2>
+        <h2>Découvrez à quoi pourrait ressembler vos surfaces d’activité</h2>
         <div className="slider-3D">
           <div className="col-3">
            <Link target={"_blank"} to={{

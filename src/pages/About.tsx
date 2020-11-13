@@ -1,9 +1,9 @@
 import React, {useEffect} from 'react';
 import Header from '../components/Header';
 import View3D from '../components/View3D';
-import advantage2 from '../assets/img/advantage2.png';
-import pic1 from '../assets/img/pic1.png';
-import pic2 from '../assets/img/pic2.png';
+import advantage2 from '../assets/img/advantage2.jpg';
+import pic1 from '../assets/img/pic1.jpg';
+import pic2 from '../assets/img/pic2.jpg';
 import {Switch} from 'react-router';
 import Footer from '../components/Footer';
 import {Link} from 'react-router-dom';

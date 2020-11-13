@@ -4,7 +4,7 @@ import Header from '../components/Header';
 import slide1 from '../assets/img/slide1.jpg';
 import advantage1 from '../assets/img/advantage1.jpg';
 import advantage2 from '../assets/img/advantage2.jpg';
-import advantage3 from '../assets/img/advantage3.png';
+import advantage3 from '../assets/img/advantage3.jpg';
 import gregoire from '../assets/img/gregoire-marra.png';
 import gaetan from '../assets/img/gaetan-bellec.png';
 import chiste from '../assets/img/chiste-fabiola.png';
