@@ -1,49 +1,51 @@
 import React, {useEffect} from 'react';
+import slide1 from '../assets/img/slide1.jpg';
+import slide2 from '../assets/img/slide2.jpg';
+import slide3 from '../assets/img/slide3.jpg';
+import {Link} from 'react-router-dom';
 
-const View3D = () => {
-
-  useEffect(() => {
-    const staticPath = process.env.PUBLIC_URL + '/js/';
-
-    let swipe = document.createElement('script');
-    swipe.src = staticPath + 'view.js';
-    swipe.id = 'view-js';
-    document.body.appendChild(swipe);
-
-    return () => {
-      swipe.remove();
-    };
-  }, []);
-
+interface IView3DProps {
+  isBorder?: boolean;
+}
+const View3D = ({isBorder = true}:IView3DProps) => {
   return (
-    <div className="view3D">
+    <div className={`view3D ${!isBorder ? 'withoutBorder' : ''}`}>
       <div className="container position-relative">
-        <p className={'tooltipView'}>Découvrez à quoi pourrait ressembler vos surfaces d’activité.</p>
-        <span className="icon-3D">&nbsp;</span>
-        <div id="sync2" className="owl-carousel owl-theme slider-3D-title">
-          <div className="item">
-            L'espace de co-working
+        <h2>Découvrez à quoi pourrait ressembler vos surfaces d’activité.</h2>
+        <div className="slider-3D">
+          <div className="col-3">
+           <Link target={"_blank"} to={{
+             pathname: '/view3d/1'
+           }}>
+             <figure className="slide">
+               <img src={slide1} />
+               <span className="icon-3D">&nbsp;</span>
+             </figure>
+           </Link>
+            <p>L'espace de co-working</p>
           </div>
-          <div className="item">
-            L'espace médical et bien-être
+          <div className="col-3">
+            <Link target={"_blank"} to={{
+              pathname: '/view3d/2'
+            }}>
+            <figure className="slide">
+              <img  src={slide2} />
+                <span className="icon-3D">&nbsp;</span>
+            </figure>
+            </Link>
+            <p>L'espace médical et bien-être</p>
           </div>
-          <div className="item">
-            La résidence seniors
+          <div className="col-3">
+            <Link target={"_blank"} to={{
+              pathname: '/view3d/3'
+            }}>
+            <figure className="slide">
+              <img  src={slide3} />
+                <span className="icon-3D">&nbsp;</span>
+            </figure>
+            </Link>
+            <p>La résidence seniors</p>
           </div>
-        </div>
-        <div className="owl-carousel owl-theme slider-3D" id="sync1">
-          <div id="container1" style={{width: '100vw', height: '100vh', overflow: 'hidden'}}>
-            <br />Loading...<br /><br />
-          </div>
-          <div id="container2" style={{width: '100vw', height: '100vh', overflow: 'hidden'}}>
-            <br />Loading...<br /><br />
-          </div>
-          {/*<div id="container2" style={{width: '100vw', height: '100vh', overflow: 'hidden'}}>
-            <br />Loading...<br /><br />
-          </div>
-          <div id="container3" style={{width: '100vw', height: '100vh', overflow: 'hidden'}}>
-            <br />Loading...<br /><br />
-          </div>*/}
         </div>
       </div>
     </div>

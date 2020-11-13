@@ -99,6 +99,10 @@ const ContactModal = ({onClose, show}:IContactModalProps) => {
                           <label className="form-label">Message</label>
                           <textarea name="message"  ref={register({ required: true })} />
                         </div>
+                        <div className="belleterre">
+                          <p className="question">Vous êtes intéressé(e) par les logements ?</p>
+                          <p className="text-belleterre">Inscrivez-vous, directement sur le site <strong><a target={'_blank'} href="https://www.belleterre.ch/">belleterre.ch</a></strong></p>
+                        </div>
                       </div>
                     )
                   }

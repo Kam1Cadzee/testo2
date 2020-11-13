@@ -11,8 +11,9 @@ import {useScrollYPosition} from 'react-use-scroll-position';
 interface IHeaderProps {
   isGreen?: boolean;
   isScroll?: boolean;
+  isBorder?: boolean;
 }
-const Header = ({isGreen = false, isScroll = true}:IHeaderProps) => {
+const Header = ({isGreen = false, isScroll = true, isBorder = false}:IHeaderProps) => {
   const scrollY = useScrollYPosition();
   const [isContactShow, setIsContactShow] = useState(false);
   const [isDownloadShow, setIsDownloadShow] = useState(false);
@@ -51,7 +52,7 @@ const Header = ({isGreen = false, isScroll = true}:IHeaderProps) => {
           </div>
         )
       }
-    <header className={`header ${scrollY > 50 || isScroll ? 'scroll' : ''}`}>
+    <header className={`header ${scrollY > 0 || isScroll ? 'scroll scrollBorder' : ''} ${isBorder ? 'scrollBorder' : ''}`}>
       <Link to="/" className="header-logo"><img src={isGreen || scrollY > 50 ? logoGR : logo} alt="O2 Belle Terre (logo)" /></Link>
       {
         (!is1140) && (

@@ -5,6 +5,7 @@ import useMedia from 'use-media';
 import Carousel from 'react-multi-carousel';
 import {Link} from 'react-router-dom';
 import slide1 from '../assets/img/slide1.jpg';
+const MobileDetect = require('mobile-detect');
 
 interface IFloorModalProps {
   show: boolean;
@@ -54,6 +55,7 @@ const FloorModal = ({index, onClose, show, setIndex, openContact}: IFloorModalPr
 
 
   const detail = data.find(d => d.id === index)!;
+  const md = new MobileDetect(window.navigator.userAgent);
 
   return (
 <>
@@ -65,12 +67,16 @@ const FloorModal = ({index, onClose, show, setIndex, openContact}: IFloorModalPr
   }
     <div className="iziModal-overlay" onClick={handleClose}></div>
     <div className="iziModal isAttached floor-modal">
-      <Link to="/view3d" target={'_blank'}>
-        <figure className="pic-view3D">
-          <img src={slide1} />
-          <span className="icon-3D dark">&nbsp;</span>
-        </figure>
-      </Link>
+      {
+        !md.mobile() && (
+          <Link to="/view3d" target={'_blank'} className={'floorLink'}>
+            <figure className="pic-view3D">
+              <img src={slide1} />
+              <span className="icon-3D dark">&nbsp;</span>
+            </figure>
+          </Link>
+        )
+      }
       <div className="iziModal-wrap">
         <div className="iziModal-content">
       <div className="modal-body">

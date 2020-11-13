@@ -25,8 +25,8 @@ const About = () => {
 
   return (
     <div>
-      <Header isGreen/>
-      <main className="main" style={{marginTop: '20rem'}}>
+      <Header isGreen isBorder={true} />
+      <main className="main aboutCon">
         <div className="container">
           <p className="main-h2">Vos futures surfaces se trouvent à moins de 5 kilomètres du centre-ville de Genève, à
             Belleterre, l’un des quartiers les plus innovants du Canton de Genève. Installez votre activité là où la
@@ -111,7 +111,7 @@ const About = () => {
         </div>
       </main>
 
-      <View3D/>
+      <View3D isBorder={false}/>
       <Footer/>
     </div>
   )

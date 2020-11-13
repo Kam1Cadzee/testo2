@@ -29,6 +29,7 @@ function App() {
       behavior: 'smooth'
     })
   }, [location.pathname]);
+
   return (
     <div className="App">
       <Switch>
@@ -36,10 +37,10 @@ function App() {
         <Route exact path={'/about'} component={About} />
         <Route exact path={'/localisation'} component={Localisation} />
         <Route exact path={'/surfaces'} component={() => <ReactCursorPosition><Surfaces /></ReactCursorPosition>} />
-        <Route exact path={'/view3d'} component={FullView3D} />
+        <Route exact path={'/view3d/:id?'} component={FullView3D} />
       </Switch>
       <DownloadModal onClose={() => setIsDownloadShow(false)} show={isDownloadShow}/>
-      <a onClick={handleOpenContact} className="brochure-label">Téléchargez la brochure</a>
+      {!location.pathname.startsWith('/view3d') && <a onClick={handleOpenContact} className="brochure-label">Téléchargez la brochure</a>}
     </div>
   );
 }

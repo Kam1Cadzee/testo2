@@ -77,13 +77,6 @@ const Main = () => {
           <p>Accélérez votre développement en offrant un cadre unique à votre activité.</p>
         </div>
 
-        <a href="#slider">
-          <figure className="pic-view3D">
-            <img src={slide1} />
-            <span className="icon-3D dark">&nbsp;</span>
-          </figure>
-        </a>
-
         <footer className="welcome-bottom">
           <div className="welcome-bottom_main">
             <div>

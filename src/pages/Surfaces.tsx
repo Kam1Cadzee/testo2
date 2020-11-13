@@ -22,7 +22,9 @@ import planFloor13 from '../assets/img/floors/floor13.jpg';
 import planFloor14 from '../assets/img/floors/floor14.jpg';
 import planFloor15 from '../assets/img/floors/floor15.jpg';
 import planFloor16 from '../assets/img/floors/floor16.jpg';
+import icTurn from '../assets/ic-turn.svg';
 import {Link, useLocation} from 'react-router-dom';
+const MobileDetect = require('mobile-detect');
 
 const fillColor = "rgba(0, 87, 74, 0.5)";
 const coords = [
@@ -94,7 +96,7 @@ const Surfaces = ({position}: any) => {
   const [show, setShow] = useState(false);
   const [isContactShow, setIsContactShow] = useState(false);
   const [center, setCenter] = useState(false);
-  console.log(position)
+
   useEffect(() => {
     const staticPath = process.env.PUBLIC_URL + '/js/';
 
@@ -102,6 +104,7 @@ const Surfaces = ({position}: any) => {
     swipe.src = staticPath + 'scripts.js';
     swipe.id = 'swipe-js';
     document.body.appendChild(swipe);
+    document.body.style.overflowY = 'hidden'
     return () => {
       swipe.remove();
     };
@@ -147,10 +150,18 @@ const Surfaces = ({position}: any) => {
 
   if(innerWidth === null) return null;
   const detail = data.find(d => d.id === index)!;
+
+  const md = new MobileDetect(window.navigator.userAgent);
   return (
     <div className="welcome surfaces">
+      {
+        md.mobile() && (
+          <div className={'icTurn'}>
+            <img src={icTurn} alt=""/>
+          </div>
+        )
+      }
       <Header isScroll={false} />
-
       <div className={'wrapper-img'}>
         {
           center && <div className={'circle'} style={{

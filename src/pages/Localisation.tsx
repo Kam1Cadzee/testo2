@@ -41,8 +41,8 @@ const Localisation = () => {
           <div className="map-scroll">
             <figure className="map-figure">
               <img src={map} className="map-pic" />
-                <span className="icon-swipe">&nbsp;</span>
                 <figcaption className="map-caption">
+                  <span className="icon-swipe" style={{left: '2rem', bottom: '10rem'}}>&nbsp;</span>
                   <div className="map-caption_block">
                     <span className="map-caption_arrow arrow-green"><img src={icArrowGreen} /></span>
                     <span>Voie verte</span>
@@ -175,7 +175,7 @@ const Localisation = () => {
           </div>
         </div>
       </main>
-      <View3D/>
+      <View3D isBorder={false}/>
       <Footer/>
     </div>
   )
