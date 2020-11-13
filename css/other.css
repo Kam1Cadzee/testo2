@@ -236,6 +236,46 @@ h1 {
 .aboutCon {
     margin-top: 20rem;
 }
+.belleterre .question {
+    margin-bottom: 1rem;
+}
+.belleterre a {
+    color: #38424b
+}
+.text-belleterre {
+    font-size: 2rem;
+}
+.icTurn {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #00574a;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: animTurn;
+    animation-duration: 1000ms;
+    animation-delay: 2000ms;
+    animation-fill-mode: both;
+}
+.icTurn img {
+    width: 14rem;
+}
+.surfaces {
+    background-image: none;
+}
+@keyframes animTurn {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        z-index: 0;
+    }
+}
 @media screen and (max-width: 991px) {
     .brochure-label {
         opacity: 1;
@@ -277,5 +317,23 @@ h1 {
     }
     .header.scroll {
         background-color: rgba(255, 255, 255, .8) !important;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .floor-count {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    .floor-modal .btn {
+        position: fixed;
+    }
+    .floor-count_up {
+        right: 3rem;
+    }
+    .floor-count_down {
+        left: 3rem;
     }
 }

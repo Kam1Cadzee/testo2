@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/testo2/static/css/main.142a5328.chunk.css",
-    "main.js": "/testo2/static/js/main.45848853.chunk.js",
-    "main.js.map": "/testo2/static/js/main.45848853.chunk.js.map",
-    "runtime-main.js": "/testo2/static/js/runtime-main.38800c1a.js",
-    "runtime-main.js.map": "/testo2/static/js/runtime-main.38800c1a.js.map",
+    "main.js": "/testo2/static/js/main.d1209841.chunk.js",
+    "main.js.map": "/testo2/static/js/main.d1209841.chunk.js.map",
+    "runtime-main.js": "/testo2/static/js/runtime-main.65d2a6e5.js",
+    "runtime-main.js.map": "/testo2/static/js/runtime-main.65d2a6e5.js.map",
     "static/css/2.cc638247.chunk.css": "/testo2/static/css/2.cc638247.chunk.css",
-    "static/js/2.8ea5aaa9.chunk.js": "/testo2/static/js/2.8ea5aaa9.chunk.js",
-    "static/js/2.8ea5aaa9.chunk.js.map": "/testo2/static/js/2.8ea5aaa9.chunk.js.map",
-    "static/js/3.e4d5e0dc.chunk.js": "/testo2/static/js/3.e4d5e0dc.chunk.js",
-    "static/js/3.e4d5e0dc.chunk.js.map": "/testo2/static/js/3.e4d5e0dc.chunk.js.map",
+    "static/js/2.ca0a3898.chunk.js": "/testo2/static/js/2.ca0a3898.chunk.js",
+    "static/js/2.ca0a3898.chunk.js.map": "/testo2/static/js/2.ca0a3898.chunk.js.map",
+    "static/js/3.7fc2627b.chunk.js": "/testo2/static/js/3.7fc2627b.chunk.js",
+    "static/js/3.7fc2627b.chunk.js.map": "/testo2/static/js/3.7fc2627b.chunk.js.map",
     "index.html": "/testo2/index.html",
     "static/css/2.cc638247.chunk.css.map": "/testo2/static/css/2.cc638247.chunk.css.map",
     "static/css/main.142a5328.chunk.css.map": "/testo2/static/css/main.142a5328.chunk.css.map",
-    "static/js/2.8ea5aaa9.chunk.js.LICENSE.txt": "/testo2/static/js/2.8ea5aaa9.chunk.js.LICENSE.txt",
+    "static/js/2.ca0a3898.chunk.js.LICENSE.txt": "/testo2/static/js/2.ca0a3898.chunk.js.LICENSE.txt",
     "static/media/advantage1.9a6542cd.jpg": "/testo2/static/media/advantage1.9a6542cd.jpg",
     "static/media/advantage2.44da71cd.jpg": "/testo2/static/media/advantage2.44da71cd.jpg",
     "static/media/advantage2.ba2950b4.png": "/testo2/static/media/advantage2.ba2950b4.png",
@@ -41,6 +41,7 @@
     "static/media/ic-plane.a1f61f61.svg": "/testo2/static/media/ic-plane.a1f61f61.svg",
     "static/media/ic-shop.56c0d113.svg": "/testo2/static/media/ic-shop.56c0d113.svg",
     "static/media/ic-train.af890ade.svg": "/testo2/static/media/ic-train.af890ade.svg",
+    "static/media/ic-turn.695c4d73.svg": "/testo2/static/media/ic-turn.695c4d73.svg",
     "static/media/logo-batima.fe022a18.svg": "/testo2/static/media/logo-batima.fe022a18.svg",
     "static/media/logo-ci_w.2ce07918.svg": "/testo2/static/media/logo-ci_w.2ce07918.svg",
     "static/media/logo.0a270780.svg": "/testo2/static/media/logo.0a270780.svg",
@@ -54,10 +55,10 @@
     "static/media/slide3.8eb6f1ff.jpg": "/testo2/static/media/slide3.8eb6f1ff.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.38800c1a.js",
+    "static/js/runtime-main.65d2a6e5.js",
     "static/css/2.cc638247.chunk.css",
-    "static/js/2.8ea5aaa9.chunk.js",
+    "static/js/2.ca0a3898.chunk.js",
     "static/css/main.142a5328.chunk.css",
-    "static/js/main.45848853.chunk.js"
+    "static/js/main.d1209841.chunk.js"
   ]
 }
