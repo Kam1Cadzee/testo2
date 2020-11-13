@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/testo2/static/css/main.142a5328.chunk.css",
-    "main.js": "/testo2/static/js/main.d1209841.chunk.js",
-    "main.js.map": "/testo2/static/js/main.d1209841.chunk.js.map",
+    "main.js": "/testo2/static/js/main.1496b6a2.chunk.js",
+    "main.js.map": "/testo2/static/js/main.1496b6a2.chunk.js.map",
     "runtime-main.js": "/testo2/static/js/runtime-main.65d2a6e5.js",
     "runtime-main.js.map": "/testo2/static/js/runtime-main.65d2a6e5.js.map",
     "static/css/2.cc638247.chunk.css": "/testo2/static/css/2.cc638247.chunk.css",
@@ -15,9 +15,8 @@
     "static/css/main.142a5328.chunk.css.map": "/testo2/static/css/main.142a5328.chunk.css.map",
     "static/js/2.ca0a3898.chunk.js.LICENSE.txt": "/testo2/static/js/2.ca0a3898.chunk.js.LICENSE.txt",
     "static/media/advantage1.9a6542cd.jpg": "/testo2/static/media/advantage1.9a6542cd.jpg",
-    "static/media/advantage2.44da71cd.jpg": "/testo2/static/media/advantage2.44da71cd.jpg",
-    "static/media/advantage2.ba2950b4.png": "/testo2/static/media/advantage2.ba2950b4.png",
-    "static/media/advantage3.7407a2c4.png": "/testo2/static/media/advantage3.7407a2c4.png",
+    "static/media/advantage2.c7e2cede.jpg": "/testo2/static/media/advantage2.c7e2cede.jpg",
+    "static/media/advantage3.8f75ac81.jpg": "/testo2/static/media/advantage3.8f75ac81.jpg",
     "static/media/bg-modal.76879427.jpg": "/testo2/static/media/bg-modal.76879427.jpg",
     "static/media/bg-surface.9a8a66cf.jpg": "/testo2/static/media/bg-surface.9a8a66cf.jpg",
     "static/media/chiste-fabiola.3bf7f186.png": "/testo2/static/media/chiste-fabiola.3bf7f186.png",
@@ -47,8 +46,8 @@
     "static/media/logo.0a270780.svg": "/testo2/static/media/logo.0a270780.svg",
     "static/media/logo_gr.ed92d2c3.svg": "/testo2/static/media/logo_gr.ed92d2c3.svg",
     "static/media/map.14a235ef.png": "/testo2/static/media/map.14a235ef.png",
-    "static/media/pic1.9ee75942.png": "/testo2/static/media/pic1.9ee75942.png",
-    "static/media/pic2.0cf5787b.png": "/testo2/static/media/pic2.0cf5787b.png",
+    "static/media/pic1.a8626762.jpg": "/testo2/static/media/pic1.a8626762.jpg",
+    "static/media/pic2.d0162bb3.jpg": "/testo2/static/media/pic2.d0162bb3.jpg",
     "static/media/styles.css": "/testo2/static/media/revicons.e8746a62.woff",
     "static/media/slide1.81bb05d5.jpg": "/testo2/static/media/slide1.81bb05d5.jpg",
     "static/media/slide2.968a637b.jpg": "/testo2/static/media/slide2.968a637b.jpg",
@@ -59,6 +58,6 @@
     "static/css/2.cc638247.chunk.css",
     "static/js/2.ca0a3898.chunk.js",
     "static/css/main.142a5328.chunk.css",
-    "static/js/main.d1209841.chunk.js"
+    "static/js/main.1496b6a2.chunk.js"
   ]
 }

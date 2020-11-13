@@ -267,6 +267,9 @@ h1 {
 .surfaces {
     background-image: none;
 }
+.about-us_one {
+    width: 35rem;
+}
 @keyframes animTurn {
     from {
         opacity: 1;
