@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react';
 import Header from '../components/Header';
 import View3D from '../components/View3D';
-import advantage2 from '../assets/img/advantage2.jpg';
+import advantage2 from '../assets/img/advantage4.jpg';
 import pic1 from '../assets/img/pic1.jpg';
 import pic2 from '../assets/img/pic2.jpg';
 import {Switch} from 'react-router';
